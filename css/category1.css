@@ -1,0 +1,68 @@
+/* fonts */
+
+.josefin-sans-medium {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-sans-light {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+  border: 2px solid black;
+  padding: 3em;
+  position: sticky;
+}
+
+main h2 {
+  text-decoration: underline;
+}
+
+.category-lunch {
+  background-color: #ebece6;
+}
+
+img {
+  width: 90%;
+  height: auto;
+}
+
+.lunch-items {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding-top: 4em;
+  padding-bottom: 5em;
+}
+
+.space {
+  border: none;
+  background-color: #45462a;
+  color: white;
+  padding: 8em;
+}
+
+.lunch-items2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding-top: 4em;
+  padding-bottom: 5em;
+}
+
+footer {
+  border: 2px solid black;
+  padding: 3em;
+}
