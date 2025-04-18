@@ -14,6 +14,8 @@
     background-color: var(--color-light);
     color: var(--color-dark);
   }
+
+  /*header*/
   
   .header {
     display: flex;
@@ -67,7 +69,6 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
-    position: sticky;
     top: 7rem;
     z-index: 90;
   }
@@ -262,15 +263,8 @@
     background-color: #f4b700;
   }
   
-  @media (max-width: 768px) {
-    .kitchen-promo {
-      flex-direction: column;
-    }
-  
-    .kitchen-title {
-      font-size: 1.5rem;
-    }
-  }
+
+  /*veggies section*/
   .vegetable-feature-main {
     background-color: #f9f9f5;
     overflow: hidden;
