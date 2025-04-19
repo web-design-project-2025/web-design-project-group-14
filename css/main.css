@@ -69,6 +69,7 @@
     flex-grow: 1;
     display: flex;
     justify-content: center;
+    position: sticky;
     top: 7rem;
     z-index: 90;
   }
@@ -381,6 +382,4 @@
     font-size: 0.9rem;
     color: #f0f0f0;
   }
-  
-
-
+ 
