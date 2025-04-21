@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Your Own Recipe</title>
+    <link rel="stylesheet" href="css/createrecipe.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-left">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link">
+                <img
+                  src="https://img.icons8.com/?size=100&id=7820&format=png&color=FFFFFF"
+                  alt="Profile icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="header-center">
+        <a href="index.html" class="logo">
+          <img
+            src="image/snackademic.png"
+            alt="Snackademic logo"
+            class="logo-img"
+          />
+        </a>
+      </div>
+
+      <div class="header-right">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li>
+              <a href="#" class="nav-link"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=qFSLWFSEYvcw&format=png&color=FFFFFF"
+                  alt="Saved icon"
+              /></a>
+            </li>
+
+            <li>
+              <a href="#" class="nav-link"
+                ><img
+                  src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF"
+                  alt="Menu icon"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- search bar -->
+    <div id="search-container" class="josefin-sans-light">
+      <input
+        type="text"
+        class="search-bar"
+        placeholder="search"
+        aria-label="Search site"
+      />
+    </div>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
+
+    <main>
+      <section class="form">
+        <a href="#" class="return">X</a>
+        <a href="#" class="josefin-sans-light saved">
+          Your Saved Recipes:<br />
+          <div class="line"></div>
+        </a>
+        <a href="#" class="josefin-sans-light create">
+          Create Your Own:<br />
+          <div class="line"></div>
+        </a>
+        <h1 class="josefin-sans-light">Create Your Own Recipe!</h1>
+        <label for="ingredients" class="josefin-sans-light ingredients"
+          >Ingredients<br />
+          <div class="line2"></div
+        ></label>
+        <textarea
+          class="josefin-sans-light"
+          type="text"
+          id="ingredients"
+          name="ingredients"
+          placeholder=" Write the ingredients needed..."
+        ></textarea>
+        <label for="steps" class="josefin-sans-light steps"
+          >Description/Steps<br />
+          <div class="line2 line3"></div
+        ></label>
+        <textarea
+          class="josefin-sans-light"
+          type="text"
+          id="steps"
+          name="steps"
+          placeholder=" Tell us how to make your meal..."
+        ></textarea>
+        <h3 class="josefin-sans-light allergies">
+          Allergies <br />
+          <div class="line2"></div>
+        </h3>
+        <form>
+          <label class="custom-checkbox josefin-sans-light">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Vegan
+          </label>
+          <label class="custom-checkbox josefin-sans-light">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Vegeterian
+          </label>
+          <label class="custom-checkbox josefin-sans-light">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Gluten
+          </label>
+          <label class="custom-checkbox josefin-sans-light">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+            Nuts
+          </label>
+        </form>
+        <h3 class="josefin-sans-light phototext">
+          Share a photo of your meal <br />
+          <div class="line2 line4"></div>
+        </h3>
+        <div class="photo">
+          <p class="josefin-sans-light">+</p>
+        </div>
+        <label for="ingredients" class="josefin-sans-light credit"
+          >Credits<br />
+          <div class="line2"></div
+        ></label>
+        <textarea
+          class="josefin-sans-light"
+          type="text"
+          id="credit"
+          name="credit"
+          placeholder=" Who should we credit..."
+        ></textarea>
+        <input type="submit" class="send" value="SEND" />
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-top">
+        <div class="footer-column">
+          <h4>BRAND</h4>
+          <ul>
+            <li><a href="#">Stores</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>SUPPORT</h4>
+          <ul>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column">
+          <h4>BORING STUFF</h4>
+          <ul>
+            <li><a href="#">Legal Notice</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-column join">
+          <h4>JOIN US</h4>
+          <input type="email" placeholder="e-mail address" />
+        </div>
+      </div>
+
+      <hr class="footer-line" />
+
+      <div class="footer-bottom">
+        <p>Snackademic</p>
+      </div>
+    </footer>
+  </body>
+</html>
