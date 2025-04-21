@@ -90,6 +90,91 @@ body {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+.menu {
+  position: fixed;
+  padding-top: 2rem;
+  top: 6.2rem;
+  right: -100%;
+  width: 37%;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 101;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu h2 {
+  color: #74070e;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.category-button {
+  display: block;
+  width: 70%;
+  padding: 1.3rem 1rem;
+  margin: 2rem 0;
+  background-color: #ffc633;
+  color: #3d0c02;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.category-button:hover {
+  color: #ffffff;
+  background-color: #c2bdbd;
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 30%;
+
+  cursor: pointer;
+}
+
+.menu-close img {
+  width: 40%;
+  height: auto;
+  display: block;
+}
+
+.join-us {
+  margin-top: 8rem;
+}
+
+input {
+  background-color: #e7e7e7;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#join-button {
+  border: none;
+  color: #ffc633;
+  background-color: #74070e;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+#join-button:hover {
+  color: #ffffff;
+  background-color: #676363;
+}
+
 /* alternatives */
 
 .form {
@@ -107,7 +192,7 @@ a {
 .return img {
   width: 3%;
   height: auto;
-  top: 7rem;
+  top: 10rem;
   left: 10px;
   background: none;
   border: none;
