@@ -157,16 +157,8 @@ p {
   margin-bottom: 4vw;
   margin-left: 15%;
 }
-.button {
-  border: none;
-  grid-column: 3/4;
-  margin-top: 6vw;
-  width: 80%;
-  height: 5vw;
-  justify-self: center;
-}
-
 #button {
+  background-color: #d9a115;
   grid-column: 3/4;
   margin-top: 6vw;
   width: 80%;

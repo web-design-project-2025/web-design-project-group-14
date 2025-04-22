@@ -11,7 +11,8 @@
       href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet"
     />
-    <script src="/menubar.js" defer></script>
+    <script src="saved.js" defer></script>
+    <script src="menubar.js" defer></script>
   </head>
   <body>
     <header class="header">
@@ -109,7 +110,7 @@
             src="https://img.icons8.com/?size=100&id=17145&format=png&color=000000"
             alt=""
         /></a>
-        <a href="#" class="josefin-sans-medium saved">
+        <a href="#" id="saved-recipes" class="josefin-sans-medium saved">
           Your Saved Recipes:<br />
           <div class="line dark"></div>
         </a>
@@ -118,6 +119,11 @@
           <div class="line light"></div>
         </a>
       </section>
+
+      <div id="saved-container">
+        <span id="saved-count">0</span>
+        <ul id="saved-list"></ul>
+      </div>
     </main>
 
     <footer class="site-footer">
