@@ -6,6 +6,18 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedList = document.getElementById("saved-list");
   const savedCount = document.getElementById("saved-count");
 
+  const brekfastrToggle = document.getElementById("brekfast-toggle");
+  const brekfastList = document.getElementById("brekfast-list");
+
+  const lunchToggle = document.getElementById("lunch-toggle");
+  const lunchList = document.getElementById("lunch-list");
+
+  const dinnerToggle = document.getElementById("dinner-toggle");
+  const dinnerList = document.getElementById("dinner-list");
+
+  const snacksToggle = document.getElementById("snacks-toggle");
+  const snacksList = document.getElementById("snacks-list");
+
   function updateSavedList() {
     if (savedList) {
       savedList.innerHTML = "";
@@ -15,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         li.innerHTML = `
             <img src="${recipe.image}" alt="" width="20%">
-            <a href="${recipe.link}">${recipe.link}</a>
+            <a href="${recipe.link}"> see more</a>
             <button class="remove-btn">Remove</button>
           `;
 
@@ -32,6 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     localStorage.setItem("savedRecipes", JSON.stringify(savedRecipes));
+    renderLunchRecipes();
   }
 
   function saveRecipe(recipe) {
@@ -61,5 +74,40 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
+  function renderLunchRecipes() {
+    if (!lunchList) return;
+    lunchList.innerHTML = "";
+
+    if (savedRecipes.length === 0) {
+      lunchList.innerHTML = "<p>No saved lunch recipes yet!</p>";
+      return;
+    }
+
+    savedRecipes.forEach((recipe) => {
+      const card = document.createElement("div");
+      card.className = "recipe-card";
+
+      card.innerHTML = `
+        <img src="${recipe.image}" alt="Recipe Image" />
+        <a href="${recipe.link}" target="_blank">See More</a>
+        <button class="remove-btn">Remove</button>
+      `;
+
+      card.querySelector(".remove-btn").addEventListener("click", () => {
+        removeRecipe(recipe.link);
+      });
+
+      lunchList.appendChild(card);
+    });
+  }
+
+  if (lunchToggle) {
+    lunchToggle.addEventListener("click", () => {
+      lunchList.classList.toggle("hidden");
+      lunchToggle.innerText = lunchList.classList.contains("hidden")
+        ? "> LUNCH:"
+        : "v LUNCH:";
+    });
+  }
   updateSavedList();
 });

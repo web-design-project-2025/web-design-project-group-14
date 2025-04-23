@@ -1,4 +1,17 @@
 /*index.html*/
+.josefin-sans-medium {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.josefin-sans-light {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+}
 
 :root {
   --font-primary: "Josefin Sans", sans-serif;
@@ -124,6 +137,7 @@ body {
   cursor: pointer;
   font-size: 1.1rem;
   text-align: left;
+  text-decoration: none;
 }
 
 .category-button:hover {
@@ -139,7 +153,6 @@ body {
   border: none;
   padding: 0;
   opacity: 30%;
-
   cursor: pointer;
 }
 
