@@ -89,7 +89,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       card.innerHTML = `
         <img src="${recipe.image}" alt="Recipe Image" />
-        <a href="${recipe.link}" target="_blank">See More</a>
+        <a href="${recipe.link}" target="_blank">See Recipe</a>
         <button class="remove-btn">Remove</button>
       `;
 
