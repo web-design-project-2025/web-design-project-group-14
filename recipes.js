@@ -224,7 +224,7 @@ const recipes = [
   },
   {
     id: recipe9,
-    title: ["Sweet", "Potato", "Salad"],
+    title: ["Sweet", "Potato Salad"],
     image: "image/lunchpic8.png",
     ingredients: [
       "1 small Sweet potato",
@@ -331,3 +331,24 @@ const recipes = [
     ],
   },
 ];
+const params = new URLSearchParams(window.location.seach);
+const recipeId = params.get("id") || "recipe1";
+const recipe = recipes.find((r) => r.id === recipeId);
+
+document.querySelector("#showfood h1").innerHTML = reipe.title;
+document.querySelector("#showfood img").src = recipe.image;
+
+const form = document.querySelector("#showfood form");
+form.innerHTML = recipe.ingredients
+  .map((ing, i) => (
+    <input type="checkbox" id="ingredient${i}" name="ingredient${i}" />
+  ))
+  .join("");
+
+document.querySelector(".circle2 p").textContent = recipe.description;
+
+const stepsContainer = document.querySelector("#steps");
+stepsContainer.innerHTML = `<h1 class="aboreto-regular">${recipe.title.toUpperCase()} RECIPE</h1>
+<ol class="josefin-sans-light">${recipe.steps
+  .map((step) => `<li>${step}</li>`)
+  .join("")}</ol>`;
