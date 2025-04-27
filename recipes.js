@@ -34,11 +34,11 @@ const recipes = [
     image: "image/lunchpic13.png",
     ingredients: [
       "2 cups Romaine lettuce",
-      "½ cup Croutons (about a small handful)",
-      "2 tablespoons Parmesan cheese",
-      "4 to 6 Cherry tomatoes",
-      "2 tablespoons Caesar dressing",
-      "1 small Grilled chicken breast breast",
+      "½ cup Croutons",
+      "2 ts Parmesan cheese",
+      "4-6 Cherry tomatoes",
+      "2 ts Caesar dressing",
+      "1 small Chicken breast",
     ],
     descriptiontitle: ["Caesar bowls are a straight-up classic."],
     description: [
@@ -370,6 +370,8 @@ stepsElement.innerHTML = `
     ${recipe.steps2.map((step) => `${step}`).join("<br><br>")}
   </p>
 `;
+
+//letting every loaded recipe have their own saved checklist
 const urlParams = new URLSearchParams(window.location.search);
 const currentRecipeId = urlParams.get("id");
 
@@ -405,4 +407,57 @@ document.addEventListener("DOMContentLoaded", () => {
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", saveCheckboxStates);
   });
+});
+
+//SEARCHBAR
+
+//
+const searchBar = document.getElementById("searchBar");
+const resultsContainer = document.getElementById("results");
+
+// Function to filter and display results
+function searchRecipes(query) {
+  const filteredRecipes = recipes.filter((recipe) => {
+    // Search in both title and ingredients
+    const searchQuery = query.toLowerCase();
+    const titles = recipe.title.join(" ").toLowerCase();
+    const ingredients = recipe.ingredients.join(" ").toLowerCase();
+
+    return titles.includes(searchQuery) || ingredients.includes(searchQuery);
+  });
+
+  // Clear previous results
+  resultsContainer.innerHTML = "";
+
+  // If no query or no results, hide results
+  if (query === "" || filteredRecipes.length === 0) {
+    resultsContainer.classList.remove("visible");
+    return;
+  }
+
+  // Show results if there are matches
+  resultsContainer.classList.add("visible");
+
+  // Display new results
+  filteredRecipes.forEach((recipe) => {
+    const recipeItem = document.createElement("div");
+    recipeItem.classList.add("result-item");
+
+    // Recipe image
+    const recipeImage = document.createElement("img");
+    recipeImage.src = recipe.image;
+    recipeImage.alt = recipe.title.join(" ");
+
+    // Append elements to the result item
+    recipeItem.appendChild(recipeImage);
+
+    // Append to results container
+    resultsContainer.appendChild(recipeItem);
+  });
+}
+
+// Event listener for search input
+searchBar.addEventListener("input", () => {
+  const query = searchBar.value;
+  searchRecipes(query);
 });
