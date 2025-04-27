@@ -1,6 +1,6 @@
 const recipes = [
   {
-    id: recipe1,
+    id: "recipe1",
     title: ["Chilli", "Bowl"],
     image: "image/lunchpic1.png",
     ingredients: [
@@ -29,7 +29,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe2,
+    id: "recipe2",
     title: ["Caesar", "Bowl"],
     image: "image/lunchpic13.png",
     ingredients: [
@@ -57,7 +57,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe3,
+    id: "recipe3",
     title: ["Halloumi", "Bowl"],
     image: "image/lunchpic12.png",
     ingredients: [
@@ -84,7 +84,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe4,
+    id: "recipe4",
     title: ["Lentil", "Stew"],
     image: "image/lunchpic3.png",
     ingredients: [
@@ -114,8 +114,8 @@ const recipes = [
     ],
   },
   {
-    id: recipe5,
-    title: "Carbonara",
+    id: "recipe5",
+    title: ["Carbonara"],
     image: "image/lunchpic4.png",
     ingredients: [
       "75g Spaghetti",
@@ -141,7 +141,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe6,
+    id: "recipe6",
     title: ["Tomato", "Pasta"],
     image: "image/lunchpic12.png",
     ingredients: [
@@ -167,7 +167,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe7,
+    id: "recipe7",
     title: ["Tomato", "Soup"],
     image: "image/lunchpic6.png",
     ingredients: [
@@ -195,8 +195,8 @@ const recipes = [
     ],
   },
   {
-    id: recipe8,
-    title: "Shakshuka",
+    id: "recipe8",
+    title: ["Shakshuka"],
     image: "image/lunchpic7.png",
     ingredients: [
       "¼ small Onion",
@@ -223,7 +223,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe9,
+    id: "recipe9",
     title: ["Sweet", "Potato Salad"],
     image: "image/lunchpic8.png",
     ingredients: [
@@ -250,7 +250,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe10,
+    id: "recipe10",
     title: ["Chicken", "Wrap"],
     image: "image/lunchpic9.png",
     ingredients: [
@@ -277,7 +277,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe11,
+    id: "recipe11",
     title: ["Chicken", "Teriyaki"],
     image: "image/lunchpic10.png",
     ingredients: [
@@ -291,7 +291,7 @@ const recipes = [
       "Steamed broccoli, edamame, or carrots (optional, but highly recommended)",
       "Sesame seeds & green onion – for garnish (optional)",
     ],
-    descriptiontitle: ["Salmon bowls are the real MVP"],
+    descriptiontitle: ["Chicken Teriyaki is your weeknight cheat code."],
     description: [
       "It’s sweet, savory, and sticky in all the right ways. Juicy chicken glazed in a shiny, umami-rich sauce, usually paired with fluffy rice and maybe some veggies? Yeah, it’s a certified crowd-pleaser—and takes like 20 minutes, tops. Restaurant vibes, zero effort.",
     ],
@@ -305,7 +305,7 @@ const recipes = [
     ],
   },
   {
-    id: recipe12,
+    id: "recipe12",
     title: ["Ham", "Sandwich"],
     image: "image/lunchpic11.png",
     ingredients: [
@@ -331,24 +331,34 @@ const recipes = [
     ],
   },
 ];
-const params = new URLSearchParams(window.location.seach);
+const params = new URLSearchParams(window.location.search);
 const recipeId = params.get("id") || "recipe1";
 const recipe = recipes.find((r) => r.id === recipeId);
 
-document.querySelector("#showfood h1").innerHTML = reipe.title;
+document.querySelector("#showfood h1").innerHTML = recipe.title.join("");
 document.querySelector("#showfood img").src = recipe.image;
 
-const form = document.querySelector("#showfood form");
-form.innerHTML = recipe.ingredients
-  .map((ing, i) => (
-    <input type="checkbox" id="ingredient${i}" name="ingredient${i}" />
-  ))
-  .join("");
+const ingredientsContainer = document.querySelector(".circle1 form");
+ingredientsContainer.innerHTML = "";
+recipe.ingredients.forEach((ingredient, index) => {
+  ingredientsContainer.innerHTML += `
+    <input type="checkbox" id="ingredient${index}" name="ingredient${index}" value="${ingredient}">
+    <label for="ingredient${index}">${ingredient}</label><br>
+  `;
+});
 
-document.querySelector(".circle2 p").textContent = recipe.description;
+document.querySelector("#circle2 h3").innerHTML =
+  recipe.descriptiontitle.join("");
+document.querySelector("#circle2 p").innerHTML = recipe.description;
 
 const stepsContainer = document.querySelector("#steps");
-stepsContainer.innerHTML = `<h1 class="aboreto-regular">${recipe.title.toUpperCase()} RECIPE</h1>
-<ol class="josefin-sans-light">${recipe.steps
-  .map((step) => `<li>${step}</li>`)
-  .join("")}</ol>`;
+stepsContainer.innerHTML = `
+  <h1 class="aboreto-regular">${recipe.title
+    .join(" ")
+    .toUpperCase()} RECIPE</h1>
+  <ol class="josefin-sans-light">
+    ${[...recipe.steps1, ...recipe.steps2]
+      .map((step) => `<li>${step}</li>`)
+      .join("")}
+  </ol>
+`;
