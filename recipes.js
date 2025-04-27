@@ -331,13 +331,16 @@ const recipes = [
     ],
   },
 ];
+//finding the thing to show when pressing "see more" on a recipe
 const params = new URLSearchParams(window.location.search);
 const recipeId = params.get("id") || "recipe1";
 const recipe = recipes.find((r) => r.id === recipeId);
 
-document.querySelector("#showfood h1").innerHTML = recipe.title.join("");
+//loading title
+document.querySelector("#showfood h1").innerHTML = recipe.title.join("<br>");
 document.querySelector("#showfood img").src = recipe.image;
 
+//ingredients are dynamically shown
 const ingredientsContainer = document.querySelector(".circle1 form");
 ingredientsContainer.innerHTML = "";
 recipe.ingredients.forEach((ingredient, index) => {
@@ -347,18 +350,27 @@ recipe.ingredients.forEach((ingredient, index) => {
   `;
 });
 
+//the description loaded
 document.querySelector("#circle2 h3").innerHTML =
   recipe.descriptiontitle.join("");
 document.querySelector("#circle2 p").innerHTML = recipe.description;
 
-const stepsContainer = document.querySelector("#steps");
-stepsContainer.innerHTML = `
+//the steps are loaded for the recipe
+const stepsElement = document.getElementById("steps");
+
+//loading the steps
+stepsElement.innerHTML = `
   <h1 class="aboreto-regular">${recipe.title
     .join(" ")
     .toUpperCase()} RECIPE</h1>
-  <ol class="josefin-sans-light">
-    ${[...recipe.steps1, ...recipe.steps2]
-      .map((step) => `<li>${step}</li>`)
-      .join("")}
-  </ol>
+  <p class="josefin-sans-light">
+    ${recipe.steps1.map((step) => `${step}`).join("<br><br>")}
+  </p>
+  <p class="josefin-sans-light steps5">
+    ${recipe.steps2.map((step) => `${step}`).join("<br><br>")}
+  </p>
 `;
+//saves the checked chekcboxes
+function saveCheckboxStates() {
+  state;
+}
