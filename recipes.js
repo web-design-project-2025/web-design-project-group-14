@@ -370,18 +370,26 @@ stepsElement.innerHTML = `
     ${recipe.steps2.map((step) => `${step}`).join("<br><br>")}
   </p>
 `;
-//saves the checked checkboxes
+const urlParams = new URLSearchParams(window.location.search);
+const currentRecipeId = urlParams.get("id");
+
+//saves the checked chekcboxes
 function saveCheckboxStates() {
   const checkboxes = document.querySelectorAll('input[type="checkbox"]');
   const states = {};
   checkboxes.forEach((checkbox) => {
     states[checkbox.id] = checkbox.checked;
   });
-  localStorage.setItem("checkboxStates", JSON.stringify(states));
+  localStorage.setItem(
+    `checkboxStates_${currentRecipeId}`,
+    JSON.stringify(states)
+  );
 }
 //the checkboxes that got saved are being loaded and applied
 function loadCheckboxStates() {
-  const states = JSON.parse(localStorage.getItem("checkboxStates"));
+  const states = JSON.parse(
+    localStorage.getItem(`checkboxStates_${currentRecipeId}`)
+  );
   if (states) {
     Object.keys(states).forEach((id) => {
       const checkbox = document.getElementById(id);
