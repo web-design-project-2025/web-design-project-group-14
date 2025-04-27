@@ -370,7 +370,31 @@ stepsElement.innerHTML = `
     ${recipe.steps2.map((step) => `${step}`).join("<br><br>")}
   </p>
 `;
-//saves the checked chekcboxes
+//saves the checked checkboxes
 function saveCheckboxStates() {
-  state;
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const states = {};
+  checkboxes.forEach((checkbox) => {
+    states[checkbox.id] = checkbox.checked;
+  });
+  localStorage.setItem("checkboxStates", JSON.stringify(states));
 }
+//the checkboxes that got saved are being loaded and applied
+function loadCheckboxStates() {
+  const states = JSON.parse(localStorage.getItem("checkboxStates"));
+  if (states) {
+    Object.keys(states).forEach((id) => {
+      const checkbox = document.getElementById(id);
+      if (checkbox) {
+        checkbox.checked = states[id];
+      }
+    });
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  loadCheckboxStates();
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  checkboxes.forEach((checkbox) => {
+    checkbox.addEventListener("change", saveCheckboxStates);
+  });
+});
