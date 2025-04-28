@@ -14,8 +14,10 @@
     <script src="menubar.js" defer></script>
     <script src="category.js" defer></script>
     <script src="recipes.js" defer></script>
+    <script src="searchbar.js" defer></script>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="header-left">
         <nav class="nav">
@@ -64,15 +66,18 @@
       </div>
     </header>
 
+    <!-- search bar -->
     <div id="search-container" class="josefin-sans-light">
       <input
         type="text"
+        id="searchBar"
         class="search-bar"
         placeholder="search"
         aria-label="Search site"
       />
     </div>
 
+    <!-- slide menu -->
     <div class="menu" id="slide-menu">
       <button class="menu-close" id="closebtn">
         <img
@@ -104,6 +109,10 @@
       </div>
     </div>
 
+    <!-- search results -->
+    <div id="results"></div>
+
+    <!-- main -->
     <main>
       <section class="category-lunch">
         <h2 id="category-name" class="josefin-sans-medium">LUNCH:</h2>
@@ -222,6 +231,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="site-footer">
       <div class="footer-top">
         <div class="footer-column">
