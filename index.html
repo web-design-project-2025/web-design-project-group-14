@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="/carousel.js" defer></script>
     <script src="/menubar.js" defer></script>
+    <script src="recipes.js" defer></script>
+    <script src="searchbar.js" defer></script>
   </head>
 
   <body>
@@ -65,16 +67,17 @@
         </nav>
       </div>
     </header>
-
+    <!-- search bar -->
     <div id="search-container" class="josefin-sans-light">
       <input
         type="text"
+        id="searchBar"
         class="search-bar"
         placeholder="search"
         aria-label="Search site"
       />
     </div>
-
+    <!-- slide menu -->
     <div class="menu" id="slide-menu">
       <button class="menu-close" id="closebtn">
         <img
@@ -106,6 +109,10 @@
       </div>
     </div>
 
+    <!-- search results -->
+    <div id="results"></div>
+
+    <!-- menu -->
     <main class="main-content">
       <section class="main-pic-index">
         <img
@@ -290,6 +297,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="site-footer">
       <div class="footer-top">
         <div class="footer-column">

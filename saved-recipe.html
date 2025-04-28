@@ -13,8 +13,11 @@
     />
     <script src="saved.js" defer></script>
     <script src="menubar.js" defer></script>
+    <script src="recipes.js" defer></script>
+    <script src="searchbar.js" defer></script>
   </head>
   <body>
+    <!-- header -->
     <header class="header">
       <div class="header-left">
         <nav class="nav">
@@ -62,16 +65,32 @@
         </nav>
       </div>
     </header>
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&display=swap"
+      rel="stylesheet"
+    />
 
+    <!-- search bar -->
     <div id="search-container" class="josefin-sans-light">
       <input
         type="text"
+        id="searchBar"
         class="search-bar"
         placeholder="search"
         aria-label="Search site"
       />
     </div>
 
+    <!-- slide menu -->
     <div class="menu" id="slide-menu">
       <button class="menu-close" id="closebtn">
         <img
@@ -103,6 +122,10 @@
       </div>
     </div>
 
+    <!-- search results -->
+    <div id="results"></div>
+
+    <!-- main -->
     <main>
       <section class="form">
         <a href="index.html" class="return">
@@ -144,6 +167,7 @@
       </section>
     </main>
 
+    <!-- footer -->
     <footer class="site-footer">
       <div class="footer-top">
         <div class="footer-column">

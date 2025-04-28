@@ -83,7 +83,127 @@ body {
   color: var(--color-dark);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
+
+/* slide menu */
+
+.menu {
+  position: fixed;
+  padding-top: 2rem;
+  top: 6.2rem;
+  right: -100%;
+  width: 37%;
+  height: 100%;
+  background-color: white;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  transition: right 0.3s ease-in-out;
+  z-index: 101;
+}
+
+.menu.active {
+  right: 0;
+}
+
+.menu h2 {
+  color: #74070e;
+  margin-top: 4rem;
+  margin-bottom: 3rem;
+}
+
+.category-button {
+  display: block;
+  width: 70%;
+  padding: 1.3rem 1rem;
+  margin: 2rem 0;
+  background-color: #ffc633;
+  color: #3d0c02;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+.category-button:hover {
+  color: #ffffff;
+  background-color: #c2bdbd;
+}
+
+.menu-close {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  padding: 0;
+  opacity: 30%;
+
+  cursor: pointer;
+}
+
+.menu-close img {
+  width: 40%;
+  height: auto;
+  display: block;
+}
+
+.join-us {
+  margin-top: 8rem;
+}
+
+input {
+  background-color: #e7e7e7;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+#join-button {
+  border: none;
+  color: #ffc633;
+  background-color: #74070e;
+  border-radius: 5px;
+  font-size: 0.8rem;
+}
+
+#join-button:hover {
+  color: #ffffff;
+  background-color: #676363;
+}
+
+/* search results */
+
+#results {
+  display: none;
+}
+#results.visible {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2%;
+  margin-top: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #ffc633;
+  padding-bottom: 5vw;
+}
+.result-item {
+  flex: 1 1 200px;
+  max-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2vw;
+  box-sizing: border-box;
+}
+.result-item img {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
 /* main page */
+
 main {
   background-color: #ffc633;
 }
@@ -101,42 +221,40 @@ main {
   margin-left: 20%;
 }
 #showfood figure {
-  grid-column: 2/4;
+  grid-column: 2/3;
   grid-row: 2/3;
-  margin-top: 2vw;
+  margin-left: 40%;
   z-index: 85;
 }
 .circle1 {
   background-color: #d9a115;
   border-radius: 50%;
-  width: 65%;
+  width: 67%;
   grid-column: 3/5;
   grid-row: 1/3;
-  margin-left: 32%;
-  margin-bottom: 16vw;
+  margin-left: 30%;
+  margin-bottom: 7vw;
 }
 .circle1 h3 {
   color: black;
   font-size: 2vw;
-  margin-top: 5.5vw;
+  margin-top: 4.5vw;
   text-align: center;
   margin-bottom: 1vw;
 }
-.ingredient {
-  margin-top: 1vw;
-}
 form {
-  margin-left: 22%;
-  margin-bottom: 7vw;
+  width: 70%;
+  margin-left: 20%;
+  margin-bottom: 5vw;
 }
 label {
   font-size: 1.5vw;
 }
 
-.circle2 {
+#circle2 {
   background-color: #3d0c02;
   border-radius: 50%;
-  width: 35%;
+  width: 38%;
   grid-column: 3/6;
   grid-row: 3/4;
   margin-left: 20%;
