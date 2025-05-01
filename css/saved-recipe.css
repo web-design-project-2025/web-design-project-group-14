@@ -240,36 +240,6 @@ input {
   background-color: #676363;
 }
 
-/* search results */
-#results {
-  display: none;
-}
-#results.visible {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 2%;
-  margin-top: 20px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #ffc633;
-  padding-bottom: 5vw;
-}
-.result-item {
-  flex: 1 1 200px;
-  max-width: 200px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2vw;
-  box-sizing: border-box;
-}
-.result-item img {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-}
-
 /* alternatives (main) */
 
 .form {
