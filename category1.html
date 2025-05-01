@@ -15,6 +15,7 @@
     <script src="category.js" defer></script>
     <script src="recipes.js" defer></script>
     <script src="searchbar.js" defer></script>
+    <script src="loading-recipe.js" defer></script>
   </head>
   <body>
     <!-- header -->
@@ -75,7 +76,10 @@
         placeholder="search"
         aria-label="Search site"
       />
+      <div id="results" class="search-results"></div>
     </div>
+
+    <div id="search-overlay"></div>
 
     <!-- slide menu -->
     <div class="menu" id="slide-menu">
