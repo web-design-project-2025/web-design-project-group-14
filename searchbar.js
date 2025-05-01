@@ -4,6 +4,7 @@
 document.addEventListener("DOMContentLoaded", () => {
   const searchBar = document.getElementById("searchBar");
   const resultsContainer = document.getElementById("results");
+  const overlay = document.getElementById("search-overlay");
 
   // Function to filter and display results
   function searchRecipes(query) {
@@ -22,11 +23,13 @@ document.addEventListener("DOMContentLoaded", () => {
     // If no query or no results, hide results
     if (query === "" || filteredRecipes.length === 0) {
       resultsContainer.classList.remove("visible");
+      overlay.classList.remove("active");
       return;
     }
 
     // Show results if there are matches
     resultsContainer.classList.add("visible");
+    overlay.classList.add("active");
 
     // Display new results
     filteredRecipes.forEach((recipe) => {
