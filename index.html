@@ -1,305 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Snackademic</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-
-    <link rel="stylesheet" href="css/main.css" />
-    <script src="/carousel.js" defer></script>
-    <script src="/menubar.js" defer></script>
-    <script src="recipes.js" defer></script>
-    <script src="searchbar.js" defer></script>
-  </head>
-
-  <body>
-    <header class="header">
-      <div class="header-left">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li>
-              <a href="profile-page.html" class="nav-link">
-                <img
-                  src="https://img.icons8.com/?size=100&id=7820&format=png&color=FFFFFF"
-                  alt="Profile icon"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="header-center">
-        <a href="index.html" class="logo">
-          <img
-            src="/img/snackademic.png"
-            alt="Snackademic logo"
-            class="logo-img"
-          />
-        </a>
-      </div>
-
-      <div class="header-right">
-        <nav class="nav">
-          <ul class="nav-list">
-            <li>
-              <a href="saved-recipe.html" class="nav-link"
-                ><img
-                  src="https://img.icons8.com/?size=100&id=qFSLWFSEYvcw&format=png&color=FFFFFF"
-                  alt="Saved icon"
-              /></a>
-            </li>
-
-            <li>
-              <a href="#" class="nav-link" id="menu-toggle"
-                ><img
-                  src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF"
-                  alt="Menu icon"
-              /></a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </header>
-
-
-<div id="search-container" class="josefin-sans-light">
-  <input
-    type="text"
-    id="searchBar"
-    class="search-bar"
-    placeholder="Search..."
-    aria-label="Search site"
-  />
-  <div class="search-btn"></div>
-</div>
- 
-    <div class="menu" id="slide-menu">
-      <button class="menu-close" id="closebtn">
-        <img
-          src="https://img.icons8.com/?size=100&id=17145&format=png&color=000000"
-          alt=""
-        />
-      </button>
-      <h2 class="josefin-sans-medium">What are you hungry for?</h2>
-      <a href="#"
-        ><button class="category-button josefin-sans-medium">
-          Brekfast
-        </button></a
-      >
-      <a href="category1.html"
-        ><button class="category-button josefin-sans-medium">Lunch</button></a
-      >
-
-      <a href="#"
-        ><button class="category-button josefin-sans-medium">Dinner</button></a
-      >
-      <a href="#"
-        ><button class="category-button josefin-sans-medium">Snack</button></a
-      >
-
-      <div class="join-us josefin-sans-light">
-        <h4>JOIN US</h4>
-        <input type="email" placeholder="e-mail address" />
-        <button id="join-button" class="josefin-sans-light">send</button>
-      </div>
-    </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snackademic</title>
 
   
-    <div id="results"></div>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-   
-    <main class="main-content">
-      <section class="main-pic-index">
+
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="/carousel.js" defer></script>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="header-left">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-link">
+              <img
+                src="https://img.icons8.com/?size=100&id=7820&format=png&color=FFFFFF"
+                alt="Profile icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="header-center">
+      <a href="index.html" class="logo">
         <img
-          class="main-pic-index-img"
-          src="https://img.freepik.com/free-photo/creative-layout-made-fresh-vegetables-rice-grains-wooden-desk_23-2148062362.jpg?t=st=1746211255~exp=1746214855~hmac=02f458676e71eeb0c293221742e0bb4be7880b13d3978a6bb4e56aacd6665062&w=996"
-          alt="Fresh salad with avocado on a table"
+          src="/img/snackademic.png"
+          alt="Snackademic logo"
+          class="logo-img"
         />
+      </a>
+    </div>
 
-        <img
-          src="/img/logo-main-pic.png"
-          alt="Stylized SNAC logo"
-          class="logo-main-index"
-        />
-      </section>
-      <section class="carousel-section">
-        <h2 class="carousel-title">Have you been introduced?</h2>
+    <div class="header-right">
+      <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="#" class="nav-link"
+              ><img
+                src="https://img.icons8.com/?size=100&id=qFSLWFSEYvcw&format=png&color=FFFFFF"
+                alt="Saved icon"
+            /></a>
+          </li>
 
-        <div class="carousel-container">
-          <button class="carousel-btn left" aria-label="Previous">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/271/271220.png"
-              alt="Left arrow"
-            />
-          </button>
+          <li>
+            <a href="#" class="nav-link"
+              ><img
+                src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF"
+                alt="Menu icon"
+            /></a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-          <div class="carousel-track-wrapper">
-            <div class="carousel-track">
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/veggie-quinoa-bowl-png-sticker-transparent-background_53876-971751.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 1"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/fresh-healthy-salad-bowl-isolated-white-background-top-view-flat-lay_522560-20529.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 2"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/isolated-bowl-fresh-greek-salad_219193-9504.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 3"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/portion-caesar-salad-with-chicken_219193-12963.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 4"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/isolated-bowl-fresh-greek-salad_219193-9504.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 5"
-                />
-              </div>
-              <div class="carousel-slide">
-                <img
-                  src="https://img.freepik.com/premium-photo/veggie-quinoa-bowl-png-sticker-transparent-background_53876-971751.jpg?ga=GA1.1.689216403.1741712964&w=740"
-                  alt="Salad 6"
-                />
-              </div>
-            </div>
-          </div>
+  <div id="search-container" class="josefin-sans-light">
+    <input
+      type="text"
+      class="search-bar"
+      placeholder="search"
+      aria-label="Search site"
+    />
+  </div>
 
-          <button class="carousel-btn right" aria-label="Next">
-            <img
-              src="https://cdn-icons-png.flaticon.com/128/271/271228.png"
-              alt="Right arrow"
-            />
-          </button>
-        </div>
-        <div class="carousel-description">
-          <h3 class="carousel-tagline">Cheap. Crunchy. Clean.</h3>
-          <p class="carousel-text">
-            This salad's got the goods: fresh veggies, bold flavor, and zero
-            guilt. Healthy eating on a student budget? Nailed it.
-          </p>
-        </div>
-      </section>
+  </header>
 
-      <section class="kitchen-promo">
-        <div class="kitchen-promo-image">
-          <img
-            src="https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42589.jpg?ga=GA1.1.689216403.1741712964&w=740"
-            alt="The Modern Kitchen Book"
-          />
-        </div>
-        <div class="kitchen-promo-content">
-          <h2 class="kitchen-title">THE MODERN<br />KITCHEN BOOK</h2>
-          <a href="extra-detail-page.html" class="kitchen-button">SEE MORE</a>
-        </div>
-      </section>
+  <main class="main-content">
+    <section class="main-pic-index">
+      
+      <img class="main-pic-index-img" src="https://images.unsplash.com/photo-1556911073-52527ac43761?q=80&w=2340&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Fresh salad with avocado on a table">
 
-      <section class="vegetable-feature-main">
-        <div class="feature-row-wrapper">
-          <div class="feature-row feature-row-1">
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/tomato-isolated-white-background_146377-1733.jpg"
-                alt="Tomato"
-              />
-              <h4>TOMATO</h4>
-              <p>as the planet intended</p>
+      <img src="/img/logo-main-pic.png" alt="Stylized SNAC logo" class="logo-main-index" />
+  
+    </section>
+    <section class="carousel-section">
+      <h2 class="carousel-title">Have you been introduced?</h2>
+    
+      <div class="carousel-container">
+        <button class="carousel-btn left" aria-label="Previous">
+          <img src="https://cdn-icons-png.flaticon.com/128/271/271220.png" alt="Left arrow">
+        </button>
+    
+        <div class="carousel-track-wrapper">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/veggie-quinoa-bowl-png-sticker-transparent-background_53876-971751.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 1">
             </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/yellow-bell-pepper-vegetarian-food-pepper-salads-vegetarian-raw_225753-1016.jpg"
-                alt="Yellow Pepper"
-              />
-              <h4>YELLOW PEPPER</h4>
-              <p>as the planet intended</p>
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/fresh-healthy-salad-bowl-isolated-white-background-top-view-flat-lay_522560-20529.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 2">
             </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/3140-vegetables-purple-eggplant-isolated-transparent-background_1049953-5013.jpg"
-                alt="Aubergine"
-              />
-              <h4>AUBERGINE</h4>
-              <p>as the planet intended</p>
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/isolated-bowl-fresh-greek-salad_219193-9504.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 3">
             </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/carrot-isolated-white_253984-4516.jpg"
-                alt="Carrot"
-              />
-              <h4>CARROT</h4>
-              <p>as the planet intended</p>
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/portion-caesar-salad-with-chicken_219193-12963.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 4">
             </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/free-photo/red-onion-shallot-isolated-white_53876-31686.jpg"
-                alt="Red Onion"
-              />
-              <h4>RED ONION</h4>
-              <p>as the planet intended</p>
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/isolated-bowl-fresh-greek-salad_219193-9504.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 5">
             </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/fresh-broccoli-vegetable_53876-12546.jpg"
-                alt="Broccoli"
-              />
-              <h4>BROCCOLI</h4>
-              <p>as the planet intended</p>
-            </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/free-photo/green-oak_1339-914.jpg"
-                alt="Green Oak"
-              />
-              <h4>GREEN OAK</h4>
-              <p>as the planet intended</p>
-            </div>
-
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/tomato-isolated-white-background_146377-1733.jpg"
-                alt="Tomato"
-              />
-              <h4>TOMATO</h4>
-              <p>as the planet intended</p>
-            </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/yellow-bell-pepper-vegetarian-food-pepper-salads-vegetarian-raw_225753-1016.jpg"
-                alt="Yellow Pepper"
-              />
-              <h4>YELLOW PEPPER</h4>
-              <p>as the planet intended</p>
-            </div>
-            <div class="veggie-card">
-              <img
-                src="https://img.freepik.com/premium-photo/3140-vegetables-purple-eggplant-isolated-transparent-background_1049953-5013.jpg"
-                alt="Aubergine"
-              />
-              <h4>AUBERGINE</h4>
-              <p>as the planet intended</p>
+            <div class="carousel-slide">
+              <img src="https://img.freepik.com/premium-photo/veggie-quinoa-bowl-png-sticker-transparent-background_53876-971751.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="Salad 6">
             </div>
           </div>
         </div>
-      </section>
-    </main>
+    
+        <button class="carousel-btn right" aria-label="Next">
+          <img src="https://cdn-icons-png.flaticon.com/128/271/271228.png" alt="Right arrow">
+        </button>
+      </div>
+      <div class="carousel-description">
+        <h3 class="carousel-tagline">Cheap. Crunchy. Clean.</h3>
+        <p class="carousel-text">
+          This salad's got the goods: fresh veggies, bold flavor, and zero guilt.
+          Healthy eating on a student budget? Nailed it.
+        </p>
+      </div>
+    </section>
 
-   
+    <section class="kitchen-promo">
+      <div class="kitchen-promo-image">
+        <img src="https://img.freepik.com/free-photo/buddha-bowl-dish-with-vegetables-legumes-top-view_1150-42589.jpg?ga=GA1.1.689216403.1741712964&w=740" alt="The Modern Kitchen Book">
+      </div>
+      <div class="kitchen-promo-content">
+        <h2 class="kitchen-title">THE MODERN<br>KITCHEN BOOK</h2>
+        <a href="#" class="kitchen-button">SEE MORE</a>
+      </div>
+    </section>
+
+    <section class="vegetable-feature-main">
+      <div class="feature-row-wrapper">
+        <div class="feature-row feature-row-1">
+    
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/tomato-isolated-white-background_146377-1733.jpg" alt="Tomato">
+            <h4>TOMATO</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/yellow-bell-pepper-vegetarian-food-pepper-salads-vegetarian-raw_225753-1016.jpg" alt="Yellow Pepper">
+            <h4>YELLOW PEPPER</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/3140-vegetables-purple-eggplant-isolated-transparent-background_1049953-5013.jpg" alt="Aubergine">
+            <h4>AUBERGINE</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/carrot-isolated-white_253984-4516.jpg" alt="Carrot">
+            <h4>CARROT</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/free-photo/red-onion-shallot-isolated-white_53876-31686.jpg" alt="Red Onion">
+            <h4>RED ONION</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/fresh-broccoli-vegetable_53876-12546.jpg" alt="Broccoli">
+            <h4>BROCCOLI</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/free-photo/green-oak_1339-914.jpg" alt="Green Oak">
+            <h4>GREEN OAK</h4>
+            <p>as the planet intended</p>
+          </div>
+    
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/tomato-isolated-white-background_146377-1733.jpg" alt="Tomato">
+            <h4>TOMATO</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/yellow-bell-pepper-vegetarian-food-pepper-salads-vegetarian-raw_225753-1016.jpg" alt="Yellow Pepper">
+            <h4>YELLOW PEPPER</h4>
+            <p>as the planet intended</p>
+          </div>
+          <div class="veggie-card">
+            <img src="https://img.freepik.com/premium-photo/3140-vegetables-purple-eggplant-isolated-transparent-background_1049953-5013.jpg" alt="Aubergine">
+            <h4>AUBERGINE</h4>
+            <p>as the planet intended</p>
+          </div>
+        </div>
+      </div>
+    </section>
+ 
+
+  </main>
+
     <footer class="site-footer">
       <div class="footer-top">
         <div class="footer-column">
@@ -309,7 +209,7 @@
             <li><a href="#">Careers</a></li>
           </ul>
         </div>
-
+    
         <div class="footer-column">
           <h4>SUPPORT</h4>
           <ul>
@@ -317,7 +217,7 @@
             <li><a href="#">Contact</a></li>
           </ul>
         </div>
-
+    
         <div class="footer-column">
           <h4>BORING STUFF</h4>
           <ul>
@@ -326,18 +226,19 @@
             <li><a href="#">Terms</a></li>
           </ul>
         </div>
-
+    
         <div class="footer-column join">
           <h4>JOIN US</h4>
           <input type="email" placeholder="e-mail address" />
         </div>
       </div>
-
+    
       <hr class="footer-line" />
-
+    
       <div class="footer-bottom">
         <p>Snackademic</p>
       </div>
-    </footer>
-  </body>
+    
+  </footer>
+</body>
 </html>
