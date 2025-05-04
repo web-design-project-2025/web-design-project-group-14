@@ -226,6 +226,31 @@ main {
   margin-left: 40%;
   z-index: 85;
 }
+
+.portion-toggle {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.4rem;
+  cursor: pointer;
+}
+
+.portion-option {
+  color: #3d0c02;
+  opacity: 0.4;
+  font-weight: 500;
+  transition: opacity 0.3s;
+}
+
+portion-option:hover {
+  opacity: 1;
+}
+
+.portion-option.active {
+  font-weight: 600;
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .circle1 {
   background-color: #d9a115;
   border-radius: 50%;

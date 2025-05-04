@@ -14,14 +14,26 @@ document.querySelector("[data-image]").setAttribute("data-image", recipe.image);
 
 //ingredients are dynamically shown
 
-const portionSelect = document.getElementById("portion-select");
 const ingredientsContainer = document.querySelector(".circle1 form");
 let currentPortion = 2;
 
-portionSelect.addEventListener("change", () => {
-  currentPortion = parseInt(portionSelect.value);
-  renderIngredients(recipe.ingredients);
+document.getElementById("portion-2").addEventListener("click", () => {
+  setPortion(2);
 });
+
+document.getElementById("portion-4").addEventListener("click", () => {
+  setPortion(4);
+});
+
+function setPortion(portion) {
+  currentPortion = portion;
+  renderIngredients(recipe.ingredients);
+
+  document
+    .querySelectorAll(".portion-option")
+    .forEach((el) => el.classList.remove("active"));
+  document.getElementById(`portion-${portion}`).classList.add("active");
+}
 
 function renderIngredients(ingredients) {
   ingredientsContainer.innerHTML = "";
