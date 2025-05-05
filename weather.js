@@ -89,13 +89,12 @@ window.addEventListener("DOMContentLoaded", () => {
   if (saved) {
     const { temp, code, timestamp } = JSON.parse(saved);
 
-    // Optional: check if it's fresh (e.g. less than 1 hour old)
-    /*  const oneHour = 60 * 60 * 1000;
+    const oneHour = 60 * 60 * 1000;
     if (Date.now() - timestamp < oneHour) {
       displayWeather(temp, code);
     } else {
       localStorage.removeItem("weatherData");
-    }*/
+    }
   }
 });
 
