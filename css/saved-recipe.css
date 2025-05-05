@@ -293,6 +293,51 @@ a {
   text-decoration: underline;
 }
 
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.login-content {
+  background: #ffc633;
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+  width: 30rem;
+  height: 30rem;
+}
+
+.login-content input {
+  display: block;
+  margin: 1rem auto;
+  width: 70%;
+  padding: 1rem;
+  border-radius: 20px;
+  font-size: 1.2rem;
+  background-color: white;
+}
+
+#login-btn {
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: none;
+  font-size: 1.2rem;
+  background-color: #74070e;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
 #saved-container {
   font-size: 1.3rem;
   margin-top: 0;
