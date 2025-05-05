@@ -156,6 +156,50 @@ body {
   pointer-events: all;
 }
 
+/* weather */
+#map-link {
+  display: none;
+}
+#find-me {
+  background-color: #45462a;
+  color: white;
+  border: none;
+  border-radius: 1vw;
+  font-size: 1.3vw;
+  padding: 0.5vw;
+  margin: 0.4vw;
+  margin-top: 1.3vw;
+}
+#weatherfacts {
+  background-color: #0000007c;
+  border-radius: 2vw;
+  position: fixed;
+  z-index: 10;
+  top: 6rem;
+  margin-left: 2%;
+  padding: 0.5%;
+}
+#weather {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+#icon {
+  font-size: 4vw;
+  display: none;
+}
+#temperature {
+  color: #f4ee84;
+  font-size: 2vw;
+  padding-top: 0.8vw;
+  display: none;
+}
+#recs {
+  display: none;
+  color: white;
+  text-align: center;
+}
+
 /* slide menu */
 
 .menu {
