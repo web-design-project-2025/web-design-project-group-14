@@ -137,6 +137,9 @@ body {
   border-radius: 50%;
   margin-right: 10px;
 }
+.result.item h3 {
+  margin-left: 5vw;
+}
 
 #search-overlay {
   position: fixed;
