@@ -308,16 +308,34 @@ a {
 
 .login-content {
   background: #ffc633;
-  padding: 2rem;
-  border-radius: 8px;
-  text-align: center;
+  padding: 2rem 3rem;
+  border-radius: 16px;
+  text-align: left;
   width: 30rem;
   height: 30rem;
 }
 
+.login-content h2 {
+  font-size: 2rem;
+  margin-bottom: 0.3rem;
+  text-align: center;
+}
+.login-content h3 {
+  font-size: 1.5rem;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.login-text {
+  font-size: 1.2rem;
+  margin-left: 4rem;
+  margin-bottom: 0.8rem;
+}
+
 .login-content input {
   display: block;
-  margin: 1rem auto;
+  margin: 1rem auto 1rem auto;
+  margin-bottom: 1rem;
   width: 70%;
   padding: 1rem;
   border-radius: 20px;
@@ -326,12 +344,18 @@ a {
 }
 
 #login-btn {
+  display: block;
+  margin: 2rem auto 0 auto;
   border-radius: 20px;
   padding: 5px 10px;
   border: none;
   font-size: 1.2rem;
   background-color: #74070e;
   color: white;
+}
+
+#login-btn:hover {
+  background-color: #a6a0a0;
 }
 
 .hidden {
