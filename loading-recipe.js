@@ -13,14 +13,54 @@ document
 document.querySelector("[data-image]").setAttribute("data-image", recipe.image);
 
 //ingredients are dynamically shown
+
 const ingredientsContainer = document.querySelector(".circle1 form");
-ingredientsContainer.innerHTML = "";
-recipe.ingredients.forEach((ingredient, index) => {
-  ingredientsContainer.innerHTML += `
-    <input type="checkbox" id="ingredient${index}" name="ingredient${index}" value="${ingredient}">
-    <label for="ingredient${index}">${ingredient}</label><br>
-  `;
+let currentPortion = 2;
+
+document.getElementById("portion-2").addEventListener("click", () => {
+  setPortion(2);
 });
+
+document.getElementById("portion-4").addEventListener("click", () => {
+  setPortion(4);
+});
+
+function setPortion(portion) {
+  currentPortion = portion;
+  renderIngredients(recipe.ingredients);
+
+  document
+    .querySelectorAll(".portion-option")
+    .forEach((el) => el.classList.remove("active"));
+  document.getElementById(`portion-${portion}`).classList.add("active");
+}
+
+function renderIngredients(ingredients) {
+  ingredientsContainer.innerHTML = "";
+
+  ingredients.forEach((ingredient, index) => {
+    const id = `ingredient${index + 1}`;
+    const checkbox = document.createElement("input");
+    checkbox.type = "checkbox";
+    checkbox.id = id;
+    checkbox.name = id;
+
+    const label = document.createElement("label");
+    label.setAttribute("for", id);
+
+    if (typeof ingredient.quantity === "number") {
+      label.innerText = `${ingredient.quantity * (currentPortion / 2)} ${
+        ingredient.unit
+      } ${ingredient.name}`;
+    } else {
+      label.innerText = `${ingredient.name} (${ingredient.quantity})`;
+    }
+    ingredientsContainer.appendChild(checkbox);
+    ingredientsContainer.appendChild(label);
+    ingredientsContainer.appendChild(document.createElement("br"));
+  });
+  loadCheckboxStates();
+}
 
 //the description loaded
 document.querySelector("#circle2 h3").innerHTML =
@@ -79,4 +119,5 @@ document.addEventListener("DOMContentLoaded", () => {
   checkboxes.forEach((checkbox) => {
     checkbox.addEventListener("change", saveCheckboxStates);
   });
+  renderIngredients(recipe.ingredients);
 });

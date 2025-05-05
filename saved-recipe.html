@@ -15,6 +15,7 @@
     <script src="menubar.js" defer></script>
     <script src="recipes.js" defer></script>
     <script src="searchbar.js" defer></script>
+    <script src="login-popup.js" defer></script>
   </head>
   <body>
     <!-- header -->
@@ -130,6 +131,28 @@
 
     <!-- main -->
     <main>
+      <div id="login" class="modal hidden">
+        <div class="login-content">
+          <h2 class="josefin-sans-medium">Welcome!</h2>
+          <h3 class="josefin-sans-light">please log in</h3>
+          <p class="login-text josefin-sans-medium">Username</p>
+          <input
+            class="josefin-sans-light"
+            type="text"
+            placeholder="e-mail"
+            id="username"
+          />
+          <p class="login-text josefin-sans-medium">Password</p>
+          <input
+            class="josefin-sans-light"
+            type="password"
+            placeholder="password"
+            id="password"
+          />
+          <button id="login-btn">Log In</button>
+        </div>
+      </div>
+
       <section class="form">
         <a href="index.html" class="return">
           <img
