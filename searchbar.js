@@ -41,8 +41,13 @@ document.addEventListener("DOMContentLoaded", () => {
       recipeImage.src = recipe.image;
       recipeImage.alt = recipe.title.join(" ");
 
+      // Recipe title
+      const recipeTitle = document.createElement("h3");
+      recipeTitle.textContent = recipe.title.join(" ");
+
       // Append elements to the result item
       recipeItem.appendChild(recipeImage);
+      recipeItem.appendChild(recipeTitle);
 
       // Append to results container
       resultsContainer.appendChild(recipeItem);

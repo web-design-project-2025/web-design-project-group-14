@@ -18,6 +18,7 @@
     <script src="recipes.js" defer></script>
     <script src="searchbar.js" defer></script>
     <script src="loading-recipe.js" defer></script>
+    <script src="weather.js" defer></script>
   </head>
 
   <body>
@@ -81,6 +82,20 @@
     </div>
 
     <div id="search-overlay"></div>
+    <!-- weather -->
+
+    <section id="weatherfacts">
+      <div id="show-location">
+        <button id="find-me">Show weather</button><br />
+        <p id="status"></p>
+        <a id="map-link" target="_blank"></a>
+      </div>
+      <div id="weather">
+        <div id="icon">.</div>
+        <div id="temperature">Loading...</div>
+      </div>
+      <div id="recs">A great time to cook!</div>
+    </section>
     <!-- slide menu -->
     <div class="menu" id="slide-menu">
       <button class="menu-close" id="closebtn">
