@@ -438,7 +438,6 @@ a {
   color: #f0f0f0;
   padding: 2.5rem 2rem;
   font-family: "Josefin Sans", sans-serif;
-  margin-top: 10.4rem;
 }
 
 .footer-top {
@@ -450,7 +449,7 @@ a {
 }
 
 .footer-column h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -468,7 +467,7 @@ a {
 .footer-column a {
   text-decoration: none;
   color: #f0f0f0;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .footer-column.join input {
@@ -476,7 +475,7 @@ a {
   border: none;
   padding: 0.5rem;
   width: 200px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: inherit;
 }
 
