@@ -12,25 +12,22 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function updateCarousel() {
       const slideWidth = slides[0].getBoundingClientRect().width;
+      track.style.transition = 'transform 0.3s ease';
       track.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
     }
 
     nextBtn.addEventListener('click', () => {
       if (currentIndex + visibleSlides < slides.length) {
         currentIndex++;
-      } else {
-        currentIndex = 0;
+        updateCarousel();
       }
-      updateCarousel();
     });
 
     prevBtn.addEventListener('click', () => {
       if (currentIndex > 0) {
         currentIndex--;
-      } else {
-        currentIndex = slides.length - visibleSlides;
+        updateCarousel();
       }
-      updateCarousel();
     });
 
     window.addEventListener('resize', updateCarousel);

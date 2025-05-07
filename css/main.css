@@ -481,7 +481,7 @@ input {
 }
 
 .carousel-slide img {
-  width: 120%;
+  width: 100%;
   height: auto;
   display: block;
   border-radius: 50%;
