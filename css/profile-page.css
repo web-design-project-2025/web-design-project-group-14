@@ -176,19 +176,25 @@ input {
   margin: 0;
 }
 
+@keyframes typing {
+  from { width: 0 }
+  to { width: 19ch }
+}
+
 .profile-title {
   color: #ffc633;
-  font-size: 2.2rem;
+  font-size: 2.7rem;
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-  width: 100%;
-  position: relative;
+  margin: 2rem auto 3rem;
+  width: 19ch;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 4s steps(19, end) forwards;
 }
 
 .profile-picture {
-  width: 220px;
-  height: 220px;
+  width: 300px;
+  height: 300px;
   border-radius: 50%;
   object-fit: cover;
   display: inline-block;
@@ -212,12 +218,12 @@ input {
 
 .profile-bio-title {
   color: #ffc633;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 1rem;
 }
 
 .profile-bio-paragraph {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   font-weight: bold;
 }
@@ -226,7 +232,7 @@ input {
 .section-title {
   border-top: 4px solid #ffc633;
   border-bottom: 4px solid #ffc633;
-  font-size: 1.2rem;
+  font-size: 1.7rem;
   font-weight: bold;
   text-transform: uppercase;
   color: #ffc633;
@@ -241,7 +247,7 @@ input {
 .carousel-container {
   position: relative;
   margin: 2rem auto;
-  max-width: 1000px;
+  max-width: 1080px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,23 +267,20 @@ input {
 
 .carousel-slide {
   flex: 0 0 33.333%;
-  padding: 1.5rem 1rem;
+  padding: 1.5rem 0.5rem;
   box-sizing: border-box;
   text-align: center;
 }
 
 .carousel-slide img {
-  width: 180px;
-  height: 180px;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 50%;
-  border: 6px solid white;
-  background-color: white;
 }
 
 .carousel-slide p {
   color: #ffffff;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
   margin-bottom: 0.5rem;
   font-weight: 600;
 }
@@ -299,7 +302,7 @@ input {
 /* QUOTE */
 .profile-quote {
   margin-top: 3rem;
-  font-size: 1.3rem;
+  font-size: 2rem;
   color: #ffc633;
   text-align: center;
   font-weight: 600;
