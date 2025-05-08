@@ -10,7 +10,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  background-color: #f7f7f2;
 }
 
 /*HEADER*/
@@ -225,7 +225,7 @@ input {
 }
 
 .percent-text {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #3d0c02;
   font-weight: bold;
   animation: grow 1s ease-in-out;
@@ -239,7 +239,7 @@ input {
 }
 
 .fruit-item img {
-  width: 220px;
+  width: 280px;
   height: auto;
 }
 
@@ -297,7 +297,7 @@ input {
 .editorial-right p {
   text-align: justify;
   color: #3d0c02;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 1.6;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
@@ -316,7 +316,7 @@ input {
 }
 
 .editorial-right figcaption {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #3d0c02;
   font-style: italic;
   margin-top: 0.5rem;
