@@ -151,9 +151,9 @@ body {
 .menu {
   position: fixed;
   padding-top: 2rem;
-  top: 6.2rem;
+  top: 5.7rem;
   right: -100%;
-  width: 37%;
+  width: 25%;
   height: 100%;
   background-color: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
@@ -170,11 +170,12 @@ body {
   color: #74070e;
   margin-top: 4rem;
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .category-button {
   display: block;
-  width: 70%;
+  width: 100%;
   padding: 1.3rem 1rem;
   margin: 2rem 0;
   background-color: #ffc633;
@@ -182,8 +183,9 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: left;
+  text-decoration: none;
 }
 
 .category-button:hover {
@@ -199,7 +201,6 @@ body {
   border: none;
   padding: 0;
   opacity: 30%;
-
   cursor: pointer;
 }
 
@@ -211,12 +212,14 @@ body {
 
 .join-us {
   margin-top: 8rem;
+  font-size: 1.2rem;
 }
 
 input {
   background-color: #e7e7e7;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
 }
 
@@ -225,7 +228,9 @@ input {
   color: #ffc633;
   background-color: #74070e;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  margin-left: 0.5rem;
 }
 
 #join-button:hover {
@@ -261,7 +266,7 @@ main {
 .portion-toggle {
   display: flex;
   gap: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   cursor: pointer;
 }
 
@@ -294,7 +299,7 @@ portion-option:hover {
 }
 .circle1 h3 {
   color: black;
-  font-size: 2vw;
+  font-size: 2.5vw;
   margin-top: 4.5vw;
   text-align: center;
   margin-bottom: 1vw;
@@ -311,7 +316,7 @@ label {
 #circle2 {
   background-color: #3d0c02;
   border-radius: 50%;
-  width: 38%;
+  width: 55%;
   grid-column: 3/6;
   grid-row: 3/4;
   margin-left: 20%;
@@ -320,14 +325,14 @@ label {
 }
 h3 {
   color: #ffc633;
-  font-size: 1.3vw;
+  font-size: 1.6vw;
   text-align: center;
   margin-top: 5vw;
 }
 p {
   color: #e7e6e3;
   width: 70%;
-  font-size: 1vw;
+  font-size: 1.5vw;
   text-align: center;
   margin-bottom: 4vw;
   margin-left: 15%;
@@ -335,23 +340,23 @@ p {
 .button {
   border: none;
   grid-column: 3/4;
-  margin-top: 6vw;
+  margin-top: 2vw;
   width: 80%;
   height: 5vw;
   justify-self: center;
+  background-color: #3d0c02;
 }
 
 #button {
   grid-column: 3/4;
   margin-top: 6vw;
-  width: 80%;
-  height: 5vw;
+  width: 60%;
   justify-self: center;
 }
 #button p {
   color: white;
-  margin-top: 1.7vw;
-  font-size: 2vw;
+  margin-top: 1.5vw;
+  font-size: 1.8vw;
   font-weight: 400;
 }
 #steps {
@@ -387,14 +392,14 @@ p {
 }
 #review h1 {
   grid-row: 1/2;
-  font-size: 2.5vw;
+  font-size: 2vw;
   margin-left: 10vw;
   text-decoration: underline 0.1vw;
 }
 #review p {
   color: #3d0c02;
   grid-row: 2/3;
-  font-size: 2.5vw;
+  font-size: 2vw;
   text-align: left;
   margin: 0;
   padding: 0;
@@ -402,7 +407,7 @@ p {
 }
 #review .starreview {
   grid-row: 3/4;
-  font-size: 2.3vw;
+  font-size: 2vw;
 }
 #review span {
   background-color: white;
@@ -430,7 +435,7 @@ p {
 }
 
 .footer-column h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -448,7 +453,7 @@ p {
 .footer-column a {
   text-decoration: none;
   color: #f0f0f0;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .footer-column.join input {
@@ -456,7 +461,7 @@ p {
   border: none;
   padding: 0.5rem;
   width: 200px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: inherit;
 }
 
@@ -471,3 +476,4 @@ p {
   font-size: 0.9rem;
   color: #f0f0f0;
 }
+

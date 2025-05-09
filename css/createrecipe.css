@@ -148,12 +148,14 @@ body {
   pointer-events: all;
 }
 
-/*slide menu*/
+/* slide menu */
+
 .menu {
   position: fixed;
-  top: 6.2rem;
+  padding-top: 2rem;
+  top: 5.7rem;
   right: -100%;
-  width: 37%;
+  width: 25%;
   height: 100%;
   background-color: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
@@ -170,11 +172,12 @@ body {
   color: #74070e;
   margin-top: 4rem;
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .category-button {
   display: block;
-  width: 70%;
+  width: 100%;
   padding: 1.3rem 1rem;
   margin: 2rem 0;
   background-color: #ffc633;
@@ -182,8 +185,9 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: left;
+  text-decoration: none;
 }
 
 .category-button:hover {
@@ -199,7 +203,6 @@ body {
   border: none;
   padding: 0;
   opacity: 30%;
-
   cursor: pointer;
 }
 
@@ -211,12 +214,14 @@ body {
 
 .join-us {
   margin-top: 8rem;
+  font-size: 1.2rem;
 }
 
 input {
   background-color: #e7e7e7;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
 }
 
@@ -225,13 +230,16 @@ input {
   color: #ffc633;
   background-color: #74070e;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  margin-left: 0.5rem;
 }
 
 #join-button:hover {
   color: #ffffff;
   background-color: #676363;
 }
+
 
 main {
   background-color: #3d0c02;
@@ -267,10 +275,15 @@ a {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30%;
+  margin-right: 32%;
   text-decoration: none;
-  color: #9a9697;
-  font-size: 1.4vw;
-  margin-top: 1.2rem;
+  color: #3d0c02; 
+  font-size: 1.8vw;
+  margin-top: 0.2rem;
+  background-color: #ffc633;
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  display: inline-block;
 }
 
 .create {
@@ -280,8 +293,9 @@ a {
   margin-left: 50%;
   color: #ffc633;
   text-decoration: underline;
-  font-size: 1.4vw;
+  font-size: 1.8vw;
   margin-top: 1.2rem;
+  transform: translateX(-38%); 
 }
 
 .saved:hover {
@@ -459,7 +473,7 @@ form {
   grid-row: 16/17;
   width: 20%;
   justify-self: center;
-  font-size: 3.5vw;
+  font-size: 1.5vw;
   color: #3d0c02;
   background-color: #ffc633;
   border: none;
@@ -531,3 +545,4 @@ form {
   font-size: 0.9rem;
   color: #f0f0f0;
 }
+
