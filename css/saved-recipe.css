@@ -26,6 +26,8 @@ body {
   background-color: #f7f7f2;
 }
 
+/* header */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -153,6 +155,8 @@ body {
   opacity: 1;
   pointer-events: all;
 }
+
+
 
 /* slide menu */
 
@@ -495,7 +499,7 @@ a {
 
 
 /* HEADER RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
     padding: 1rem;
   }
@@ -519,8 +523,97 @@ a {
   }
 }
 
+/* MAIN RESPONSIVE */
+@media (max-width: 420px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1rem;
+  }
+
+  .return img {
+    width: 10%;
+    top: 1rem;
+    left: 1rem;
+  }
+
+  .saved,
+  .create {
+    font-size: 4.5vw;
+    margin: 1rem auto;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .create {
+    transform: none;
+  }
+
+  .login-content {
+    width: 90%;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .login-content h2 {
+    font-size: 1.5rem;
+  }
+
+  .login-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .login-text {
+    font-size: 1rem;
+    margin-left: 1.5rem;
+  }
+
+  .login-content input {
+    width: 80%;
+    padding: 0.7rem;
+    font-size: 1rem;
+  }
+
+  #login-btn {
+    font-size: 1rem;
+    padding: 0.4rem 1rem;
+  }
+
+  #saved-container,
+  .category-section {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+
+  .category-toggle {
+    font-size: 1.1rem;
+  }
+
+  .recipe-card {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.8rem;
+  }
+
+  .recipe-card img {
+    width: 100%;
+    height: auto;
+  }
+
+  .recipe-card a {
+    margin-left: 0;
+    font-size: 1.1rem;
+  }
+
+  .remove-btn {
+    font-size: 1.1rem;
+    padding: 0.4rem 0.8rem;
+  }
+}
+
 /* SEARCH RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #search-container {
     position: sticky;
     top: 3.5rem;          
