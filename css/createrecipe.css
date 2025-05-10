@@ -17,11 +17,14 @@
   font-weight: 400;
   font-style: normal;
 }
+
 body {
   padding: 0;
   margin: 0;
   height: 100%;
 }
+
+/* Header */
 
 .header {
   display: flex;
@@ -68,6 +71,7 @@ body {
   width: 1.7rem;
   height: 1.7rem;
 }
+
 /* Search Bar */
 
 #search-container {
@@ -148,7 +152,7 @@ body {
   pointer-events: all;
 }
 
-/* slide menu */
+/* Slide menu */
 
 .menu {
   position: fixed;
@@ -240,6 +244,7 @@ input {
   background-color: #676363;
 }
 
+/* Main */
 
 main {
   background-color: #3d0c02;
@@ -385,7 +390,7 @@ form {
 }
 
 .custom-checkbox input {
-  display: none; /* Hide the default checkbox */
+  display: none; 
 }
 
 .custom-checkbox .checkmark {
@@ -548,7 +553,7 @@ form {
 
 
 /* HEADER RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
     padding: 1rem;
   }
@@ -573,7 +578,7 @@ form {
 }
 
 /* SEARCH RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #search-container {
     position: sticky;
     top: 3.5rem;          
@@ -626,6 +631,73 @@ form {
   }
 }
 
+/* MAIN RESPONSIVE */
+@media (max-width: 420px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  h1 {
+    font-size: 7vw;
+    text-align: center;
+  }
+
+  .saved,
+  .create {
+    margin: 1rem auto;
+    font-size: 4vw;
+    padding: 0.6rem 1rem;
+    text-align: center;
+    transform: none;
+  }
+
+  .ingredients,
+  .steps,
+  .allergies,
+  .phototext,
+  .credit {
+    font-size: 5vw;
+    margin:auto;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+
+  #ingredients,
+  #steps,
+  #credit {
+    width: 80%;
+    height: 30vw;
+    margin: 2vw auto;
+  }
+
+  .photo {
+    width: 80%;
+    height: 40vw;
+    margin: auto;
+  }
+
+  .photo p {
+    font-size: 10vw;
+    width: 50%;
+  }
+
+  .send {
+    width: 30%;
+    font-size: 3vw;
+  }
+
+  .custom-checkbox {
+    font-size: 5vw;
+    margin-left: 2vw;
+  }
+
+  .custom-checkbox .checkmark {
+    width: 10px;
+    height: 10px;
+  }
+}
 
 /* FOOTER RESPONSIVE */
 @media (max-width: 480px) {
