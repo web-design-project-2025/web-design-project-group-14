@@ -445,6 +445,7 @@ input {
   margin-top: 2rem;
   color: #ffffff;
 }
+
 /* carousel */
 .carousel-section {
   background-color: #f7f7f2;
@@ -696,4 +697,273 @@ input {
   text-align: center;
   font-size: 0.9rem;
   color: #f0f0f0;
+}
+
+
+
+/* HEADER RESPONSIVE */
+@media (max-width: 400px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo-img {
+    height: 30px;
+  }
+
+  .nav-link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-list {
+    gap: 0.8rem;
+  }
+
+  .header-center {
+    left: 46%; 
+    transform: translateX(-44%);
+  }
+}
+
+/* SEARCH RESPONSIVE */
+@media (max-width: 400px) {
+  #search-container {
+    position: sticky;
+    top: 3.5rem;          
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #e7e6e3;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #333333;
+    outline: none;
+  }
+
+  .search-results {
+    width: 18rem;
+  }
+
+  #find-me {
+    margin-top: 2rem;     
+    background-color: #45462a;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+  }
+ 
+  #icon {
+    font-size: 2rem;
+  }
+
+  #temperature {
+    font-size: 1rem;
+  }
+
+  #weatherfacts {
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+
+/* SLIDE MENU*/
+ /* @media (max-width: 420px) {
+  .menu {
+    width: 70vw;
+    height: auto;
+    max-height: 90vh;
+    top: 43%;
+    left: 50%;
+    right: auto;
+    transform: translate(-44%, -51%);
+    overflow-y: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 0.8rem;
+    left: 0.8rem;
+    right: auto;
+    width: 30px;
+    height: 30px;
+    background: none;
+    border: none;
+    padding: 0;
+    opacity: 0.6;
+    cursor: pointer;
+  }
+  
+  .menu-close img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .menu h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 2rem 0;
+  }
+
+  .category-button {
+    width: 100%;
+    font-size: 1.1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .join-us {
+    text-align: center;
+    margin-top: 2rem;
+    padding: 0 1rem; 
+  }
+
+  .join-us input {
+    width: 80%;            
+    max-width: 280px;       
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    margin: 0 auto 0.7rem auto;
+    display: block;
+    border-radius: 0.5rem;
+  }
+  #join-button {
+    width: 70%;
+    max-width: 200px;
+    margin: 0 auto;
+    display: block;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 0.5rem;
+  }
+}  */
+
+/* MAIN PIC/ INDEX*/
+@media (max-width: 420px) {
+  .main-pic-index-title {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+  }
+
+  .logo-main-index {
+    width: 180px;
+  }
+
+  .welcome-section {
+    padding: 2rem 1rem;
+  }
+
+  .welcome-text h2 {
+    font-size: 1.2rem;
+  }
+
+  .welcome-text p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  .welcome-note {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/* CAROUSSEL*/
+@media (max-width: 420px) {
+  .carousel-title {
+    font-size: 1.3rem;
+  }
+
+  .carousel-container {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .carousel-track-wrapper {
+    width: 100%;
+  }
+
+  .carousel-track {
+    flex-wrap: nowrap;
+  }
+
+  .carousel-slide img {
+    width: 99%;       
+    max-width: 250px;  
+    margin-left: 2.5rem;       
+    display: block;     
+  }
+  .carousel-slide {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex: 0 0 90%;          
+  }
+
+  .carousel-btn.left {
+    left: 0;
+  }
+
+  .carousel-btn.right {
+    right: 0;
+  }
+
+  .carousel-btn img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .carousel-description {
+    padding: 0rem;
+  }
+
+  .carousel-tagline {
+    font-size: 1.2rem;
+  }
+
+  .carousel-text {
+    font-size: 1rem;
+  }
+}
+
+
+/* FOOTER RESPONSIVE */
+@media (max-width: 480px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column.join input {
+    width: 70%;         
+    max-width: 250px;   
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    padding: 2rem 1rem;
+  }
 }
