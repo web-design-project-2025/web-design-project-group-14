@@ -289,14 +289,14 @@ a {
 }
 
 .create {
+  grid-column: 2/2;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 50%;
+  margin-top: 1vw;
   color: #3d0c02;        
   font-size: 1.8vw;
-  background-color: #ffc633; 
-  padding: 0.6rem 1.2rem;    
-  border-radius: 8px;        
-  display: inline-block;
-  margin: 1vw auto 0 auto; 
-  transform: translateX(12%); 
+  text-decoration: underline;
 }
 
 .modal {

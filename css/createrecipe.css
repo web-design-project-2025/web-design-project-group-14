@@ -280,15 +280,10 @@ a {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30%;
-  margin-right: 32%;
-  text-decoration: none;
-  color: #3d0c02; 
+  margin-top: 1vw;
+  text-decoration: underline;
+  color: white;
   font-size: 1.8vw;
-  margin-top: 0.2rem;
-  background-color: #ffc633;
-  padding: 0.6rem 1.2rem;
-  border-radius: 8px;
-  display: inline-block;
 }
 
 .create {
@@ -299,7 +294,7 @@ a {
   color: #ffc633;
   text-decoration: underline;
   font-size: 1.8vw;
-  margin-top: 1.2rem;
+  margin-top: auto;
   transform: translateX(-38%); 
 }
 
