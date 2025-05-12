@@ -13,6 +13,7 @@
     />
     <script src="recipes.js" defer></script>
     <script src="searchbar.js" defer></script>
+    <script src="/menubar.js" defer></script>
   </head>
 
   <body>
@@ -22,7 +23,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li>
-              <a href="#" class="nav-link">
+              <a href="profile-page.html" class="nav-link">
                 <img
                   src="https://img.icons8.com/?size=100&id=7820&format=png&color=FFFFFF"
                   alt="Profile icon"
@@ -46,7 +47,7 @@
         <nav class="nav">
           <ul class="nav-list">
             <li>
-              <a href="#" class="nav-link"
+              <a href="saved-recipe.html" class="nav-link"
                 ><img
                   src="https://img.icons8.com/?size=100&id=qFSLWFSEYvcw&format=png&color=FFFFFF"
                   alt="Saved icon"
@@ -54,7 +55,7 @@
             </li>
 
             <li>
-              <a href="#" class="nav-link"
+              <a href="#" class="nav-link" id="menu-toggle"
                 ><img
                   src="https://img.icons8.com/?size=100&id=36389&format=png&color=FFFFFF"
                   alt="Menu icon"
@@ -74,7 +75,10 @@
         placeholder="search"
         aria-label="Search site"
       />
+      <div id="results" class="search-results"></div>
     </div>
+
+    <div id="search-overlay"></div>
 
     <!-- slide menu -->
     <div class="menu" id="slide-menu">
@@ -119,26 +123,17 @@
         <div class="fruit-item">
           <p class="percent-text">25%</p>
           <div class="bar-line"></div>
-          <img
-            src="image/orange-picture.png"
-            alt="orange"
-          />
+          <img src="image/orange-picture.png" alt="orange" />
         </div>
         <div class="fruit-item">
           <p class="percent-text">40%</p>
           <div class="bar-line"></div>
-          <img
-            src="image/blue-berry.png"
-            alt="blueberries"
-          />
+          <img src="image/blue-berry.png" alt="blueberries" />
         </div>
         <div class="fruit-item">
           <p class="percent-text">65%</p>
           <div class="bar-line"></div>
-          <img
-            src="image/lemon.png"
-            alt="lemon"
-          />
+          <img src="image/lemon.png" alt="lemon" />
         </div>
       </div>
       <section class="shake-wrapper">
@@ -146,51 +141,78 @@
           <hr class="section-line" />
           <h2 class="section-title">THE POWER SHAKE</h2>
         </div>
-      
+
         <div class="editorial-layout">
           <div class="editorial-left">
-           
             <p>
-              When student life is running at 100 miles per hour, it’s easy to default to vending machine snacks and triple-shot coffees just to stay afloat. Between morning lectures, late-night deadlines, and squeezing in some kind of social life, eating healthy can feel more like a luxury than a priority. But what if one simple, affordable shake could fuel your energy, focus, and even your mood, without draining your wallet?
+              When student life is running at 100 miles per hour, it’s easy to
+              default to vending machine snacks and triple-shot coffees just to
+              stay afloat. Between morning lectures, late-night deadlines, and
+              squeezing in some kind of social life, eating healthy can feel
+              more like a luxury than a priority. But what if one simple,
+              affordable shake could fuel your energy, focus, and even your
+              mood, without draining your wallet? Enter the Power Shake: a
+              three-ingredient blend of blood orange, blueberries, and lemon
+              that tastes as good as it looks. It’s bright, bold, and bursting
+              with benefits that make it the ultimate smart snack for students.
+            </p>
+
+            <p>
+              Let’s start with blueberries, the real MVP here. These tiny blue
+              fruits are often labeled a “superfood,” and for good reason.
+              They’re packed with antioxidants called anthocyanins, which help
+              protect your body from stress, the internal kind caused by junk
+              food and lack of sleep, not just the emotional kind before exams.
             </p>
             <p>
-              Enter the Power Shake: a three-ingredient blend of blood orange, blueberries, and lemon that tastes as good as it looks. It’s bright, bold, and bursting with benefits that make it the ultimate smart snack for students.
+              Then there’s blood orange, which brings a sweet-tart twist and a
+              shot of vitamin C to the mix. Unlike regular oranges, blood
+              oranges contain extra antioxidants, including anthocyanins (yup,
+              again!) that help lower inflammation and boost your immune system.
             </p>
             <p>
-              Let’s start with blueberries, the real MVP here. These tiny blue fruits are often labeled a “superfood,” and for good reason. They’re packed with antioxidants called anthocyanins, which help protect your body from stress, the internal kind caused by junk food and lack of sleep, not just the emotional kind before exams.
-            </p>
-            <p>
-              Then there’s blood orange, which brings a sweet-tart twist and a shot of vitamin C to the mix. Unlike regular oranges, blood oranges contain extra antioxidants, including anthocyanins (yup, again!) that help lower inflammation and boost your immune system.
-            </p>
-            <p>
-              And finally, lemon. It’s the underdog of the fruit world but a total powerhouse. Adding lemon to your diet helps with digestion, hydrates the body, and can even support clear skin.
+              And finally, lemon. It’s the underdog of the fruit world but a
+              total powerhouse. Adding lemon to your diet helps with digestion,
+              hydrates the body, and can even support clear skin.
             </p>
           </div>
-      
+
           <div class="editorial-right">
             <p>
-              Besides the health perks, the Power Shake is incredibly easy to make, no expensive juicers or protein powders required. All you need is a blender, a handful of each fruit, and some water or ice.
+              Besides the health perks, the Power Shake is incredibly easy to
+              make, no expensive juicers or protein powders required. All you
+              need is a blender, a handful of each fruit, and some water or ice.
             </p>
             <p>
-              What makes the Power Shake even more student-friendly is its flexibility. Running late? Throw the ingredients in a blender bottle and shake it on your way out the door. Want something cold post-workout? Blend it with crushed ice and enjoy it like a slushie.
+              What makes the Power Shake even more student-friendly is its
+              flexibility. Running late? Throw the ingredients in a blender
+              bottle and shake it on your way out the door. Want something cold
+              post-workout? Blend it with crushed ice and enjoy it like a
+              slushie. Let’s be honest, we eat with our eyes first. The bright
+              blend of deep purple, sunset orange, and zesty yellow doesn’t just
+              look amazing on your feed, it also signals a variety of vitamins
+              and antioxidants working together.
             </p>
             <p>
-              And let’s be honest, we eat with our eyes first. The bright blend of deep purple, sunset orange, and zesty yellow doesn’t just look amazing on your feed, it also signals a variety of vitamins and antioxidants working together.
-            </p>
-            <p>
-              In a world full of wellness trends, pricey supplements, and TikTok health hacks, the Power Shake stands out because it’s simple, accessible, and genuinely effective. No weird ingredients, no complicated steps, just three fruits that do more than most overpriced powders ever could.
+              In a world full of wellness trends, pricey supplements, and TikTok
+              health hacks, the Power Shake stands out because it’s simple,
+              accessible, and genuinely effective. No weird ingredients, no
+              complicated steps, just three fruits that do more than most
+              overpriced powders ever could.
             </p>
             <figure>
               <img
                 src="https://img.freepik.com/premium-photo/shouting-aggressively-looking-very-angry-frustrated-outraged-annoyed-screaming-no-milkshake-concept_1194-348207.jpg"
                 alt="Fuel your day with blueberries"
               />
-              <figcaption><em>Fuel your day with blueberries, 2023</em></figcaption>
+              <figcaption>
+                <em>Fuel your day with blueberries, 2023</em>
+              </figcaption>
             </figure>
           </div>
         </div>
       </section>
-      
+
       <section class="learn-more">
         <h2>Learn more with Snackademic!</h2>
         <img
