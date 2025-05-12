@@ -19,6 +19,7 @@ body {
   margin: 0;
 }
 
+/* HEADER */
 .header {
   display: flex;
   justify-content: space-between;
@@ -65,10 +66,8 @@ body {
   height: 1.7rem;
 }
 
-/* Search Bar */
 
 /* Search Bar */
-
 #search-container {
   position: sticky;
   top: 6rem;
@@ -148,13 +147,12 @@ body {
 }
 
 /* slide menu */
-
 .menu {
   position: fixed;
   padding-top: 2rem;
-  top: 6.2rem;
+  top: 5.7rem;
   right: -100%;
-  width: 37%;
+  width: 25%;
   height: 100%;
   background-color: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
@@ -171,11 +169,12 @@ body {
   color: #74070e;
   margin-top: 4rem;
   margin-bottom: 3rem;
+  font-size: 2rem;
 }
 
 .category-button {
   display: block;
-  width: 70%;
+  width: 100%;
   padding: 1.3rem 1rem;
   margin: 2rem 0;
   background-color: #ffc633;
@@ -183,8 +182,9 @@ body {
   border: none;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   text-align: left;
+  text-decoration: none;
 }
 
 .category-button:hover {
@@ -200,7 +200,6 @@ body {
   border: none;
   padding: 0;
   opacity: 30%;
-
   cursor: pointer;
 }
 
@@ -212,12 +211,14 @@ body {
 
 .join-us {
   margin-top: 8rem;
+  font-size: 1.2rem;
 }
 
 input {
   background-color: #e7e7e7;
   border: none;
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
   border-radius: 5px;
 }
 
@@ -226,13 +227,16 @@ input {
   color: #ffc633;
   background-color: #74070e;
   border-radius: 5px;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  padding: 0.7rem 1.2rem;
+  margin-left: 0.5rem;
 }
 
 #join-button:hover {
   color: #ffffff;
   background-color: #676363;
 }
+
 
 /*main*/
 #category-name {
@@ -259,6 +263,8 @@ input {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-right: 2rem;
+  margin-left: 2rem;
   gap: 100px;
   padding-top: 4em;
   padding-bottom: 5em;
@@ -272,19 +278,18 @@ input {
   cursor: pointer;
   font-size: 1.3rem;
   background-color: #3d0c02;
-  color: white;
-
+  color: #ffc633;
   margin-top: 3vw;
 }
 
 .button:hover {
   background-color: #ffc633;
-  color: #000000;
+  color: #3d0c02;
 }
 
 .card {
   display: flex;
-  background-color: #6c6d3e;
+  background-color: #45462a;
   justify-content: space-between;
   padding: 5rem;
   max-width: 100%;
@@ -319,7 +324,7 @@ input {
 }
 
 .text-section p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   color: white;
   text-align: center;
   line-height: 1.6;
@@ -356,7 +361,7 @@ input {
 }
 
 .text-section button {
-  background-color: #ffd469;
+  background-color: #ffc633;
   border: none;
   border-radius: 4px;
   padding: 7px 50px;
@@ -377,6 +382,8 @@ input {
   justify-content: space-around;
   align-items: center;
   text-align: center;
+  margin-right: 4rem;
+  margin-left: 2rem;
   gap: 100px;
   padding-top: 4em;
   padding-bottom: 5em;
@@ -399,7 +406,7 @@ input {
 }
 
 .footer-column h4 {
-  font-size: 0.9rem;
+  font-size: 1rem;
   margin-bottom: 0.5rem;
   text-transform: uppercase;
 }
@@ -417,7 +424,7 @@ input {
 .footer-column a {
   text-decoration: none;
   color: #f0f0f0;
-  font-size: 0.85rem;
+  font-size: 1rem;
 }
 
 .footer-column.join input {
@@ -425,7 +432,7 @@ input {
   border: none;
   padding: 0.5rem;
   width: 200px;
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-family: inherit;
 }
 
@@ -440,3 +447,188 @@ input {
   font-size: 0.9rem;
   color: #f0f0f0;
 }
+
+
+/* HEADER RESPONSIVE */
+@media (max-width: 420px) {
+  .header {
+    padding: 1rem;
+  }
+
+  .logo-img {
+    height: 30px;
+  }
+
+  .nav-link img {
+    width: 20px;
+    height: 20px;
+  }
+
+  .nav-list {
+    gap: 0.8rem;
+  }
+
+  .header-center {
+    left: 46%; 
+    transform: translateX(-44%);
+  }
+}
+
+/* SEARCH RESPONSIVE */
+@media (max-width: 420px) {
+  #search-container {
+    position: sticky;
+    top: 3.5rem;          
+    z-index: 90;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 0.9rem;
+    padding: 0.6rem 0.9rem;
+    border: none;
+    border-radius: 10px;
+    background-color: #e7e6e3;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
+    color: #333333;
+    outline: none;
+  }
+
+  .search-results {
+    width: 18rem;
+  }
+
+  #find-me {
+    margin-top: 2rem;     
+    background-color: #45462a;
+    color: white;
+    font-size: 1rem;
+    padding: 0.5rem 1.2rem;
+    border: none;
+    border-radius: 8px;
+  }
+ 
+  #icon {
+    font-size: 2rem;
+  }
+
+  #temperature {
+    font-size: 1rem;
+  }
+
+  #weatherfacts {
+    padding: 1rem;
+    margin-left: 1rem;
+  }
+}
+
+/* MAIN RESPONSIVE */
+@media (max-width: 420px) {
+  #category-name {
+    font-size: 1.5rem;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    text-align: center;
+  }
+
+  .lunch-items,
+  .lunch-items2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 0 1rem;
+    padding: 2rem 0;
+  }
+
+  .category-lunch img {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .button {
+    font-size: 1rem;
+    padding: 0.5rem 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  .text-section {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .text-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .text-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .text-section p {
+    font-size: 1rem;
+  }
+
+  .text-section button {
+    font-size: 0.9rem;
+    padding: 0.6rem 2rem;
+  }
+
+  .image-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .image-box img {
+    width: 90%;
+    height: auto;
+    max-width: 250px;
+    padding-left: 20%;
+  }
+
+  .rating {
+    width: 100%;
+    margin-top: 0.9rem;
+    padding-left: 39%;
+    font-size: 1rem;
+    color: #ffd469;
+  }
+}
+
+
+/* FOOTER RESPONSIVE */
+@media (max-width: 480px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .footer-column {
+    width: 100%;
+  }
+
+  .footer-column.join input {
+    width: 70%;         
+    max-width: 250px;   
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+  }
+
+  .site-footer {
+    padding: 2rem 1rem;
+  }
+}
+
