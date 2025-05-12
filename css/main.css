@@ -203,8 +203,6 @@ body {
   text-align: center;
 }
 
-
-
 /* slide menu */
 
 .menu {
@@ -639,8 +637,6 @@ input {
   color: #f0f0f0;
 }
 
-
-
 /* HEADER RESPONSIVE */
 @media (max-width: 420px) {
   .header {
@@ -661,7 +657,7 @@ input {
   }
 
   .header-center {
-    left: 46%; 
+    left: 46%;
     transform: translateX(-44%);
   }
 }
@@ -670,7 +666,7 @@ input {
 @media (max-width: 420px) {
   #search-container {
     position: sticky;
-    top: 3.5rem;          
+    top: 3.5rem;
     z-index: 90;
     display: flex;
     flex-direction: column;
@@ -697,7 +693,7 @@ input {
   }
 
   #find-me {
-    margin-top: 2rem;     
+    margin-top: 2rem;
     background-color: #45462a;
     color: white;
     font-size: 1rem;
@@ -705,7 +701,7 @@ input {
     border: none;
     border-radius: 8px;
   }
- 
+
   #icon {
     font-size: 2rem;
   }
@@ -720,9 +716,8 @@ input {
   }
 }
 
-
 /* SLIDE MENU*/
- /* @media (max-width: 420px) {
+/* @media (max-width: 420px) {
   .menu {
     width: 70vw;
     height: auto;
@@ -845,16 +840,16 @@ input {
   }
 
   .carousel-slide img {
-    width: 99%;       
-    max-width: 250px;  
-    margin-left: 2.5rem;       
-    display: block;     
+    width: 99%;
+    max-width: 250px;
+    margin-left: 2.5rem;
+    display: block;
   }
   .carousel-slide {
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
-    flex: 0 0 90%;          
+    flex: 0 0 90%;
   }
 
   .carousel-btn.left {
@@ -883,7 +878,6 @@ input {
   }
 }
 
-
 /* FOOTER RESPONSIVE */
 @media (max-width: 480px) {
   .footer-top {
@@ -897,8 +891,8 @@ input {
   }
 
   .footer-column.join input {
-    width: 70%;         
-    max-width: 250px;   
+    width: 70%;
+    max-width: 250px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
