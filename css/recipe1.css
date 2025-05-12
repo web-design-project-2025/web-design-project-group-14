@@ -565,11 +565,11 @@ p {
   }
   #showfood figure {
     grid-column: 1/2;
-    margin-left: 7vw;
+    margin-left: 3vw;
     margin-top: 0;
   }
   #showfood img {
-    max-width: 100%;
+    max-width: 110%;
   }
 
   .portion-toggle {
@@ -643,6 +643,36 @@ p {
     margin-top: 2.5vw;
     font-size: 7vw;
     margin-left: 2%;
+  }
+  #steps {
+    grid-template-columns: 100%;
+  }
+  #steps h1 {
+    grid-column: 1/2;
+    font-size: 9vw;
+    margin-left: 2%;
+  }
+  #steps p {
+    width: 95%;
+    grid-column: 1/2;
+    font-size: 6vw;
+    line-height: 6vw;
+    margin-left: 4%;
+  }
+  #steps .steps5 {
+    grid-column: 1/2;
+  }
+  #review h1 {
+    font-size: 9vw;
+  }
+  #review p {
+    font-size: 7vw;
+  }
+  #review .starreview {
+    font-size: 7vw;
+  }
+  #review span {
+    font-size: 6.5vw;
   }
 }
 
