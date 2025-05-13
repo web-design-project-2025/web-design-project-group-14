@@ -164,7 +164,7 @@ body {
   display: none;
 }
 #find-me {
-  background-color: #45462a;
+  background-color: #cdcdcd59;
   color: white;
   border: none;
   border-radius: 1vw;
@@ -324,12 +324,14 @@ input {
 .main-pic-index {
   position: relative;
   text-align: center;
+  margin-top: 0.8vw;
 }
 
 .main-pic-index-img {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0.8;
 }
 
 .main-pic-index-title {
@@ -344,7 +346,6 @@ input {
   left: 50%;
   width: 260px;
   transform: translate(-50%, -50%);
-  opacity: 0.85;
   z-index: 2;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
   pointer-events: none;
@@ -411,11 +412,18 @@ input {
 .carousel-track-wrapper {
   overflow: hidden;
   width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
+  transition: height 0.5s ease-in-out;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
 }
 
 .carousel-slide {
