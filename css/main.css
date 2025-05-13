@@ -164,7 +164,7 @@ body {
   display: none;
 }
 #find-me {
-  background-color: #45462a;
+  background-color: #cdcdcd59;
   color: white;
   border: none;
   border-radius: 1vw;
@@ -324,12 +324,14 @@ input {
 .main-pic-index {
   position: relative;
   text-align: center;
+  margin-top: 0.8vw;
 }
 
 .main-pic-index-img {
   width: 100%;
   height: auto;
   display: block;
+  opacity: 0.8;
 }
 
 .main-pic-index-title {
@@ -344,7 +346,6 @@ input {
   left: 50%;
   width: 260px;
   transform: translate(-50%, -50%);
-  opacity: 0.85;
   z-index: 2;
   filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.2));
   pointer-events: none;
@@ -411,11 +412,18 @@ input {
 .carousel-track-wrapper {
   overflow: hidden;
   width: 100%;
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 10%,
+    rgba(0, 0, 0, 1) 90%,
+    rgba(0, 0, 0, 0)
+  );
+  transition: height 0.5s ease-in-out;
 }
 
 .carousel-track {
   display: flex;
-  transition: transform 0.5s ease;
 }
 
 .carousel-slide {
@@ -717,78 +725,11 @@ input {
 }
 
 /* SLIDE MENU*/
-/* @media (max-width: 420px) {
+@media (max-width: 420px) {
   .menu {
-    width: 70vw;
-    height: auto;
-    max-height: 90vh;
-    top: 43%;
-    left: 50%;
-    right: auto;
-    transform: translate(-44%, -51%);
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-  }
-
-  .menu-close {
-    position: absolute;
-    top: 0.8rem;
-    left: 0.8rem;
-    right: auto;
-    width: 30px;
-    height: 30px;
-    background: none;
-    border: none;
-    padding: 0;
-    opacity: 0.6;
-    cursor: pointer;
-  }
-  
-  .menu-close img {
-    width: 100%;
-    height: auto;
-    display: block;
-  }
-
-  .menu h2 {
-    font-size: 1.5rem;
-    text-align: center;
-    margin: 2rem 0;
-  }
-
-  .category-button {
-    width: 100%;
-    font-size: 1.1rem;
-    margin: 1rem 0;
-    padding: 1rem;
-    text-align: center;
-  }
-
-  .join-us {
-    text-align: center;
-    margin-top: 2rem;
-    padding: 0 1rem; 
-  }
-
-  .join-us input {
-    width: 80%;            
-    max-width: 280px;       
-    padding: 0.6rem 1rem;
-    font-size: 1rem;
-    margin: 0 auto 0.7rem auto;
-    display: block;
-    border-radius: 0.5rem;
-  }
-  #join-button {
     width: 70%;
-    max-width: 200px;
-    margin: 0 auto;
-    display: block;
-    padding: 0.8rem;
-    font-size: 1rem;
-    border-radius: 0.5rem;
   }
-}  */
+}
 
 /* MAIN PIC/ INDEX*/
 @media (max-width: 420px) {
@@ -817,6 +758,47 @@ input {
   .welcome-note {
     font-size: 1rem;
     margin-top: 1.5rem;
+  }
+}
+@media (max-width: 420px) {
+  #find-me {
+    background-color: #cdcdcd59;
+    color: white;
+    border: none;
+    border-radius: 1vw;
+    font-size: 1.3vw;
+    padding: 0.5vw;
+    margin: 0.4vw;
+    margin-top: 1.3vw;
+  }
+  #weatherfacts {
+    background-color: #0000007c;
+    border-radius: 2vw;
+    position: fixed;
+    z-index: 10;
+    top: 6rem;
+    margin-left: 2%;
+    padding: 0.5%;
+  }
+  #weather {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  #icon {
+    font-size: 10vw;
+    display: none;
+  }
+  #temperature {
+    color: #f4ee84;
+    font-size: 8vw;
+    padding-top: 0.8vw;
+    display: none;
+  }
+  #recs {
+    display: none;
+    color: white;
+    text-align: center;
   }
 }
 

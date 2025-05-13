@@ -676,6 +676,9 @@ input {
 /* MAIN RESPONSIVE */
 
 @media (max-width: 420px) {
+  .menu {
+    width: 70%;
+  }
   .main-title {
     font-size: 2rem;
     margin-top: 2rem;

@@ -295,7 +295,7 @@ a {
   text-decoration: underline;
   font-size: 1.8vw;
   margin-top: auto;
-  transform: translateX(-38%); 
+  transform: translateX(-38%);
 }
 
 .saved:hover {
@@ -385,7 +385,7 @@ form {
 }
 
 .custom-checkbox input {
-  display: none; 
+  display: none;
 }
 
 .custom-checkbox .checkmark {
@@ -393,7 +393,6 @@ form {
   height: 40px;
   background-color: #3d0c02;
   border: 2px solid #3d0c02;
-  border-radius: 25px;
   margin-right: 8px;
   position: relative;
   transition: background-color 0.2s;
@@ -546,7 +545,6 @@ form {
   color: #f0f0f0;
 }
 
-
 /* HEADER RESPONSIVE */
 @media (max-width: 420px) {
   .header {
@@ -567,7 +565,7 @@ form {
   }
 
   .header-center {
-    left: 46%; 
+    left: 46%;
     transform: translateX(-44%);
   }
 }
@@ -576,7 +574,7 @@ form {
 @media (max-width: 420px) {
   #search-container {
     position: sticky;
-    top: 3.5rem;          
+    top: 3.5rem;
     z-index: 90;
     display: flex;
     flex-direction: column;
@@ -603,7 +601,7 @@ form {
   }
 
   #find-me {
-    margin-top: 2rem;     
+    margin-top: 2rem;
     background-color: #45462a;
     color: white;
     font-size: 1rem;
@@ -611,7 +609,7 @@ form {
     border: none;
     border-radius: 8px;
   }
- 
+
   #icon {
     font-size: 2rem;
   }
@@ -628,6 +626,9 @@ form {
 
 /* MAIN RESPONSIVE */
 @media (max-width: 420px) {
+  .menu {
+    width: 70%;
+  }
   .form {
     display: flex;
     flex-direction: column;
@@ -654,7 +655,7 @@ form {
   .phototext,
   .credit {
     font-size: 5vw;
-    margin:auto;
+    margin: auto;
     margin-top: 4vw;
     margin-bottom: 4vw;
   }
@@ -689,8 +690,8 @@ form {
   }
 
   .custom-checkbox .checkmark {
-    width: 10px;
-    height: 10px;
+    width: 5vw;
+    height: 5vw;
   }
 }
 
@@ -707,8 +708,8 @@ form {
   }
 
   .footer-column.join input {
-    width: 70%;         
-    max-width: 250px;   
+    width: 70%;
+    max-width: 250px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
