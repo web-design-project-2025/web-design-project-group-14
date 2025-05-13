@@ -85,7 +85,7 @@ ul {
 .menu {
   position: fixed;
   padding-top: 2rem;
-  top: 5.7rem;
+  top: 3.3rem;
   right: -100%;
   width: 25%;
   height: 100%;
@@ -172,7 +172,6 @@ input {
   background-color: #676363;
 }
 
-
 /*PROFILE*/
 
 .profile-bio-section {
@@ -183,8 +182,12 @@ input {
 }
 
 @keyframes typing {
-  from { width: 0 }
-  to { width: 19ch }
+  from {
+    width: 0;
+  }
+  to {
+    width: 19ch;
+  }
 }
 
 .profile-title {
@@ -394,7 +397,7 @@ input {
   }
 
   .header-center {
-    left: 46%; 
+    left: 46%;
     transform: translateX(-44%);
   }
 }
@@ -462,6 +465,9 @@ input {
     font-size: 1.3rem;
     padding: 0 1rem;
   }
+  .menu {
+    width: 70%;
+  }
 }
 
 /* FOOTER RESPONSIVE */
@@ -477,8 +483,8 @@ input {
   }
 
   .footer-column.join input {
-    width: 70%;         
-    max-width: 250px;   
+    width: 70%;
+    max-width: 250px;
     padding: 0.5rem 1rem;
     font-size: 1rem;
   }
