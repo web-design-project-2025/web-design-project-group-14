@@ -861,7 +861,7 @@ input {
 }
 
 /* FOOTER RESPONSIVE */
-@media (max-width: 480px) {
+@media (max-width: 420px) {
   .footer-top {
     flex-direction: column;
     align-items: flex-start;
