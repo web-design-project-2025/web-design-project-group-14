@@ -346,6 +346,7 @@ textarea::placeholder {
   font-size: 2vw;
   margin-left: 9vw;
   margin-top: 5vw;
+  padding-left: 1.5vw;
   color: #ffc633;
 }
 .steps {
@@ -355,6 +356,7 @@ textarea::placeholder {
   height: 2.2vw;
   margin-left: 5vw;
   margin-top: 5vw;
+  padding-left: 1.5vw;
   color: #ffc633;
 }
 form {
@@ -372,6 +374,7 @@ form {
   margin-left: 9vw;
   font-size: 2vw;
   margin-top: 5vw;
+  padding-left: 1.5vw;
 }
 .custom-checkbox {
   display: inline-flex;
@@ -381,6 +384,7 @@ form {
   font-size: 2vw;
   margin: 1.5vw 0 1.5vw 0;
   margin-right: 5vw;
+  padding-left: 1.5vw;
   font-weight: bold;
 }
 
@@ -429,6 +433,7 @@ form {
   margin-left: 9vw;
   font-size: 2vw;
   margin-top: 5vw;
+  padding-left: 1.5vw;
 }
 .line4 {
   width: 60%;
@@ -444,21 +449,28 @@ form {
   margin-left: 9vw;
   background-color: #eee;
 }
+
 .photo p {
   background-color: #3d0c02;
   color: #ffc633;
-  font-size: 9vw;
-  border-radius: 5vw;
-  width: 26%;
+  font-size: 5vw;        
+  width: 6vw;             
+  height: 6vw;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   margin-left: 1vw;
   margin-bottom: 1vw;
 }
+
 .credit {
   grid-row: 12/13;
   color: #ffc633;
   font-size: 2vw;
   margin-left: 5vw;
+  padding-left: 1.5vw;
 }
 #credit {
   grid-row: 13/14;
@@ -675,8 +687,17 @@ form {
   }
 
   .photo p {
-    font-size: 10vw;
-    width: 50%;
+    font-size: 6vw;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
   }
 
   .send {
