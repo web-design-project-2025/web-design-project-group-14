@@ -416,6 +416,18 @@ input {
   text-align: center;
 }
 
+.fruit-1 img {
+  margin-top: 2rem;
+}
+
+.fruit-2 img {
+  margin-top: 0rem; 
+}
+
+.fruit-3 img {
+  margin-top: 4rem;
+}
+
 .percent-text {
   font-size: 1.6rem;
   color: #3d0c02;
@@ -428,6 +440,18 @@ input {
   width: 3px;
   background-color: #3d0c02;
   margin: 0 auto 1rem auto;
+}
+
+.bar-25 {
+  height: 420px;
+}
+
+.bar-40 {
+  height: 550px;
+}
+
+.bar-65 {
+  height: 350px;
 }
 
 .fruit-item img {
