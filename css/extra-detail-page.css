@@ -760,7 +760,8 @@ input {
     padding: 0 1.5rem;
     line-height: 1.6;     
     letter-spacing: 0.02rem; 
-    word-spacing: 0.02rem;   
+    word-spacing: 0.02rem;
+    text-align: left;   
     
   }
 
