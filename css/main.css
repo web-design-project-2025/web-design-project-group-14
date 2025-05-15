@@ -739,12 +739,18 @@ input {
 /* SLIDE MENU*/
 @media (max-width: 420px) {
   .menu {
-    width: 70%;
+    width: 80%;
+  }
+  .join-us {
+    margin-bottom: 30vw;
   }
 }
 
 /* MAIN PIC/ INDEX*/
 @media (max-width: 420px) {
+  .main-pic-index {
+    margin-top: 1.5vw;
+  }
   .main-pic-index-title {
     font-size: 1.6rem;
     margin-top: 1rem;
@@ -789,7 +795,7 @@ input {
     position: fixed;
     z-index: 10;
     top: 6rem;
-    margin-left: 2%;
+    margin-left: 3%;
     padding: 0.5%;
   }
   #weather {

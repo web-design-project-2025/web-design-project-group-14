@@ -556,6 +556,15 @@ a {
     transform: translateX(-44%);
   }
 }
+/* SLIDE MENU*/
+@media (max-width: 420px) {
+  .menu {
+    width: 80%;
+  }
+  .join-us {
+    margin-bottom: 30vw;
+  }
+}
 
 /* MAIN RESPONSIVE */
 @media (max-width: 420px) {
