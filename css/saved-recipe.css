@@ -292,7 +292,11 @@ a {
   margin-top: 1vw;
   color: #3d0c02;
   font-size: 1.8vw;
-  text-decoration: underline;
+  text-decoration: none;
+}
+
+.create:hover {
+  color: #ffc633;
 }
 
 .modal {
