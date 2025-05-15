@@ -230,7 +230,9 @@ body {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
-
+a {
+  text-decoration: none;
+}
 .category-button {
   display: block;
   width: 100%;

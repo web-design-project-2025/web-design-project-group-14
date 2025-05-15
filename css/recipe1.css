@@ -9,6 +9,19 @@
   font-weight: 400;
   font-style: normal;
 }
+.josefin-sans-medium {
+  font-family: "Josefin Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+:root {
+  --font-primary: "Josefin Sans", sans-serif;
+  --color-dark: #1a1a1a;
+  --color-light: #fff;
+  --color-accent: #45462a;
+}
 body {
   padding: 0;
   margin: 0;
@@ -158,6 +171,7 @@ body {
   background-color: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  overflow-y: auto;
   transition: right 0.3s ease-in-out;
   z-index: 101;
 }
@@ -172,7 +186,9 @@ body {
   margin-bottom: 1rem;
   font-size: 2rem;
 }
-
+a {
+  text-decoration: none;
+}
 .category-button {
   display: block;
   width: 100%;
@@ -262,6 +278,7 @@ input {
   color: #ffffff;
   background-color: #676363;
 }
+
 /* main page */
 
 main {
