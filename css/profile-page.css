@@ -385,7 +385,7 @@ input {
 }
 
 /* HEADER RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
     padding: 1rem;
   }
