@@ -28,7 +28,7 @@ const recipes = [
   },
   {
     id: "recipe2",
-    title: ["Brocolli Fried", "Rice"],
+    title: ["Broccoli Fried", "Rice"],
     image: "image/lunchpic13.png",
     ingredients: [
       { name: "Cooked rice", quantity: 1, unit: "cups" },
