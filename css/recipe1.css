@@ -178,6 +178,7 @@ body {
 
 .menu.active {
   right: 0;
+  max-height: max-content;
 }
 
 .menu h2 {
@@ -254,6 +255,7 @@ a {
 .join-us {
   margin-top: 3rem;
   font-size: 1.2rem;
+  margin-bottom: 10vw;
 }
 
 input {
