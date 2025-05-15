@@ -90,13 +90,10 @@ const recipes = [
       { name: "medium Onion", quantity: 1 / 4, unit: "" },
       { name: "Crushed tomatoes", quantity: 1 / 2, unit: "cup" },
       { name: "Garlic", quantity: 1, unit: "clove" },
-      { name: "Olive oil", quantity: 1, unit: "tsp" },
-      { name: "each Paprika & cumin", quantity: 1 / 2, unit: "tsp" },
-      { name: "About 1 cup Veggie broth or water", quantity: "", unit: "" },
     ],
     descriptiontitle: ["Lentil Stew is comfort in a bowl"],
     description: [
-      "It’s warm, filling, and packed with plant-based goodness. With earthy lentils, chunky veggies, and a rich tomato-spiced broth, this stew is your go-to for cozy days, meal prep wins, or when you just want something that hits like a hug. It’s hearty, nourishing, and totally satisfying—no frills, just flavor.",
+      "It’s warm, filling, and packed with plant-based goodness. With earthy lentils, chunky veggies, and a rich tomato-spiced broth, this stew is your go-to for cozy days, meal prep wins, or when you just want something that hits like a hug.",
     ],
     steps1: [
       "1. Sauté the aromatics: Heat olive oil in a pot over medium heat. Add finely chopped onion and minced garlic, sauté until soft and fragrant (about 2–3 minutes).",
@@ -117,9 +114,9 @@ const recipes = [
       { name: "Spaghetti", quantity: 75, unit: "g" },
       { name: "Pancetta or bacon", quantity: 50, unit: "g" },
       { name: "large Egg", quantity: 1, unit: "" },
-      { name: "Parmesan or Pecorino", quantity: 1 / 4, unit: "cup" },
+      { name: "Heavy Cream", quantity: 1 / 2, unit: "cup" },
+      { name: "Parmesan", quantity: 1 / 4, unit: "cup" },
       { name: "Garlic", quantity: 1, unit: "clove" },
-      { name: "Salt & Pepper (to taste)", quantity: "", unit: "" },
     ],
     descriptiontitle: ["Carbonara is the cheat code to comfort"],
     description: [
@@ -144,13 +141,12 @@ const recipes = [
       { name: "Pasta", quantity: 75, unit: "g" },
       { name: "Garlic", quantity: 1, unit: "clove" },
       {
-        name: "Canned crushed tomatoes or passata",
+        name: "Crushed Tomatoes",
         quantity: 1 / 2,
         unit: "cup",
       },
       { name: "Olive oil", quantity: 1, unit: "tsp" },
-      { name: "Salt & pepper to taste", quantity: "", unit: "" },
-      { name: "Salt & pepper to taste", quantity: "", unit: "" },
+      { name: "Italian Seasoning", quantity: 1, unit: "tsp" },
     ],
     descriptiontitle: ["Tomato Pasta is the OG weeknight hero"],
     description: [
@@ -171,17 +167,16 @@ const recipes = [
     title: ["Tomato", "Soup"],
     image: "image/lunchpic6.png",
     ingredients: [
-      { name: "Canned crushed tomatoes or passata", quantity: 1, unit: "cup" },
+      { name: "Crushed Tomatoes", quantity: 1, unit: "cup" },
       { name: "Onion", quantity: 1 / 2, unit: "small" },
       { name: "Garlic", quantity: 1, unit: "clove" },
-      { name: "Butter or olive oil", quantity: 1, unit: "tbsp" },
+      { name: "Butter", quantity: 1, unit: "tbsp" },
       { name: "Vegetable broth or water", quantity: 1 / 2, unit: "cup" },
-      { name: "Cream or milk (optional)", quantity: 1, unit: "tbsp" },
       { name: "½ tsp Sugar", quantity: 1 / 2, unit: "tsp" },
     ],
     descriptiontitle: ["Tomato Soup is a cozy hug in a mug"],
     description: [
-      "It’s smooth, savory, and endlessly comforting. Whether you're under the weather, short on time, or just craving something warm and nostalgic—this quick tomato soup delivers. Minimal ingredients, maximum comfort. Bonus points if you pair it with a grilled cheese.",
+      "It’s smooth, savory, and endlessly comforting. Whether you're under the weather, short on time, or just craving something warm and nostalgic—this quick tomato soup delivers. Minimal ingredients, maximum comfort.",
     ],
     steps1: [
       "1. Sauté aromatics: In a small saucepan, melt butter or heat olive oil over medium heat. Add finely chopped onion and minced garlic, and sauté until soft and fragrant—about 2–3 minutes.",
@@ -203,14 +198,12 @@ const recipes = [
       { name: "Bell pepper", quantity: 1 / 2, unit: "" },
       { name: "Garlic", quantity: 1, unit: "clove" },
       {
-        name: "Canned crushed tomatoes or passata",
+        name: "Crushed Tomatoes",
         quantity: 1 / 2,
         unit: "cup",
       },
-      { name: "Olive oil", quantity: 1, unit: "tbsp" },
       { name: "Paprika, Cumin", quantity: 1 / 2, unit: "tsp" },
       { name: "Eggs", quantity: 1, unit: "" },
-      { name: "Bread or pita(non-negotiable)", quantity: "", unit: "" },
     ],
     descriptiontitle: ["Shakshuka is brunch's boldest move"],
     description: [
@@ -233,23 +226,13 @@ const recipes = [
     ingredients: [
       { name: "Sweet potato", quantity: 1, unit: "small" },
       { name: "Olive oil", quantity: 1, unit: "tsp" },
-      { name: "Mixed greens or spinach", quantity: 1, unit: "cup" },
-      { name: "A few thin slices Red onion", quantity: "", unit: "" },
+      { name: "Mixed greens", quantity: 1, unit: "cup" },
+      { name: "Red onion", quantity: 5, unit: "slices" },
       { name: "Cherry tomatoes (optional)", quantity: 5, unit: "" },
-      {
-        name: "Feta cheese, crumbled (optional but delicious)",
-        quantity: 2,
-        unit: "tbsp",
-      },
-      {
-        name: "Cooked chickpeas or lentils (optional for extra protein)",
-        quantity: 1 / 4,
-        unit: "cup",
-      },
     ],
     descriptiontitle: ["Sweet Potato Salad is a glow-up in a bowl"],
     description: [
-      "It’s hearty, wholesome, and hits that sweet-meets-savory spot like a pro. Roasted sweet potatoes bring the caramelized vibes, and when you throw in crunchy veggies, a zesty dressing, and maybe some cheese or chickpeas? You’ve got a salad that actually fills you up and tastes like fall in every bite—any time of year.",
+      "It’s hearty, wholesome, and hits that sweet-meets-savory spot like a pro. Roasted sweet potatoes bring the caramelized vibes, and when you throw in crunchy veggies, a zesty dressing, and maybe some cheese or chickpeas?",
     ],
     steps1: [
       "1. Roast the sweet potato: Preheat oven to 200°C (400°F). Toss diced sweet potato with olive oil, salt, and pepper. Roast for about 20 minutes or until tender and slightly crispy on the edges. (Or air fry for 12–15 mins!)",
@@ -268,20 +251,10 @@ const recipes = [
     ingredients: [
       { name: "Tortilla or wrap", quantity: 1, unit: "large" },
       { name: "Cooked chicken", quantity: 3 / 4, unit: "cup" },
-      { name: "Lettuce or spinach", quantity: 1 / 2, unit: "cup" },
-      { name: "A  few thin slices Cucumber", quantity: "", unit: "" },
+      { name: "Lettuce", quantity: 1 / 2, unit: "cup" },
+      { name: "Cucumber", quantity: 5, unit: "slices" },
       { name: "Tomato", quantity: 1 / 2, unit: "small" },
       { name: "Cheese", quantity: 2, unit: "tbsp" },
-      {
-        name: "Sauce (yogurt-garlic, mayo, hummus, tzatziki, or ranch—dealer’s choice)",
-        quantity: 2,
-        unit: "tbsp",
-      },
-      {
-        name: "Salt, pepper, paprika, or chili flakes – to taste",
-        quantity: "",
-        unit: "",
-      },
     ],
     descriptiontitle: ["Chicken Wraps are the GOAT of grab-and-go"],
     description: [
@@ -289,7 +262,7 @@ const recipes = [
     ],
     steps1: [
       "1. Warm your wrap (optional but recommended): Heat the tortilla in a dry pan or microwave for 15–20 seconds so it’s easier to fold.",
-      "2. Layer it up: Spread your sauce on the wrap, then layer lettuce, chicken, sliced tomato, cucumber, onion (optional), and cheese (feta, cheddar, or whatever you like). Season with salt, pepper, and any spices you like.",
+      "2. Layer it up: Spread your sauce on the wrap (yogurt-garlic, mayo, hummus, tzatziki, or ranch—dealer’s choice), then layer lettuce, chicken, sliced tomato, cucumber, onion (optional), and cheese (feta, cheddar, or whatever you like). Season with salt, pepper, and any spices you like. (ex. paprika, or chili flakes)",
     ],
     steps2: [
       "3. Wrap it tight: Fold the sides in, then roll it from the bottom up into a snug wrap. You can toast it in a pan for extra crunch or eat it fresh.",
@@ -331,13 +304,8 @@ const recipes = [
       { name: "Butter, softened", quantity: 1, unit: "tbsp" },
       { name: "Grated Cheese", quantity: 1 / 4, unit: "cup" },
       { name: "Ham", quantity: 3, unit: "slices" },
-      { name: "Sliced Tomato", quantity: "", unit: "" },
-      { name: "Sliced Pickles", quantity: "", unit: "" },
-      {
-        name: "Optional extras – mustard, mayo, salad or a pinch of black pepper",
-        quantity: "",
-        unit: "",
-      },
+      { name: "Tomato", quantity: 4, unit: "slices" },
+      { name: "Pickles", quantity: 7, unit: "slices" },
     ],
     descriptiontitle: ["Ham Sandwiches are pure, golden comfort."],
     description: [
@@ -345,7 +313,7 @@ const recipes = [
     ],
     steps1: [
       "1. Prep the bread: Spread butter on one side of each bread slice (sourdough, white, rye—your call). (That’ll be the outside.)",
-      "2. Assemble the sandwich: On the unbuttered side, layer cheese (cheddar, Swiss, mozzarella, or whatever melts well), ham, and any extras you like. Top with the second slice, buttered side facing out.",
+      "2. Assemble the sandwich: On the unbuttered side, layer cheese (cheddar, Swiss, mozzarella, or whatever melts well), ham, and any extras you like. Top with the second slice, buttered side facing out. (Optional extras – mustard, mayo, salad or a pinch of black pepper)",
     ],
     steps2: [
       "3. Grill it up: Place in a hot nonstick skillet over medium heat. Cook for 2–4 minutes per side, pressing down gently with a spatula, until the bread is golden and the cheese is melty.",
