@@ -58,7 +58,7 @@ const recipes = [
   {
     id: "recipe3",
     title: ["Halloumi", "Bowl"],
-    image: "image/lunchpic12.png",
+    image: "image/lunchpic14.png",
     ingredients: [
       { name: "Halloumi", quantity: 100, unit: "g" },
       { name: "Mixed greens", quantity: 2, unit: "cups" },

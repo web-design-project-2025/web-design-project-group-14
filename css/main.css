@@ -215,6 +215,7 @@ body {
   background-color: white;
   box-shadow: -2px 0 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
+  overflow-y: auto;
   transition: right 0.3s ease-in-out;
   z-index: 101;
 }
