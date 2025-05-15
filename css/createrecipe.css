@@ -280,8 +280,8 @@ a {
   flex-direction: column;
   align-items: flex-start;
   margin-left: 30%;
-  margin-top: 1vw;
-  text-decoration: underline;
+  margin-top: 1.3rem;
+  text-decoration: none;
   color: white;
   font-size: 1.8vw;
 }
@@ -290,7 +290,8 @@ a {
   grid-column: 2/2;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 60%;
+  margin-left: 64%;
+  margin-top: 1.3rem;
   color: #ffc633;
   text-decoration: underline;
   font-size: 1.8vw;
@@ -309,13 +310,16 @@ h1 {
   font-size: 4vw;
   margin: 0;
   padding: 0;
-  margin-top: 4vw;
+  margin-top: 5vw;
+  margin-bottom: 5rem;
   color: #ffc633;
 }
 
 .ingredients-section {
   grid-column: 1/2;
-  grid-row: 6/7;
+  grid-row: 5/7;
+  margin-left: 5rem;
+  margin-top: 2.6rem;
 }
 
 #ingredients-list {
@@ -323,8 +327,10 @@ h1 {
   flex-direction: column;
   gap: 0.7rem;
   margin-top: 1rem;
-  padding-left: 2.5rem;
+  padding-left: 4rem;
   width: 50%;
+  max-height: 270px;
+  overflow-y: auto;
 }
 
 .ingredients-input {
@@ -341,7 +347,7 @@ h1 {
   border-radius: 8px;
   padding: 0.6rem 1rem;
   font-size: 1rem;
-  margin-left: 9vw;
+  margin-left: 10vw;
   margin-top: 0.5rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -356,9 +362,10 @@ h1 {
   justify-self: right;
   width: 70%;
   height: 20vw;
-  margin-top: 2vw;
+  margin-top: 1rem;
   margin-right: 9vw;
 }
+
 textarea {
   border-radius: 1rem;
   border: none;
@@ -372,18 +379,18 @@ textarea {
   grid-row: 5/6;
   font-size: 2vw;
   margin-left: 9vw;
-  margin-top: 5vw;
   padding-left: 1.5vw;
   color: #ffc633;
 }
+
 .steps {
   grid-column: 2/3;
   grid-row: 5/6;
   font-size: 2vw;
   height: 2.2vw;
   margin-left: 5vw;
-  margin-top: 5vw;
   padding-left: 1.5vw;
+  padding-top: 2rem;
   color: #ffc633;
 }
 form {
