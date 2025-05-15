@@ -1,5 +1,7 @@
 //SEARCHBAR
 
+/*https://chatgpt.com/share/68264ce9-33c0-8002-9fb5-d051dd3b5ec2*/
+
 //
 document.addEventListener("DOMContentLoaded", () => {
   const searchBar = document.getElementById("searchBar");

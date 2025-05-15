@@ -1,3 +1,5 @@
+/*https://chatgpt.com/share/68264832-ae2c-8002-b58c-2155b71af9a4*/
+
 //finding the thing to show when pressing "see more" on a recipe
 const params = new URLSearchParams(window.location.search);
 const recipeId = params.get("id") || "recipe1";
