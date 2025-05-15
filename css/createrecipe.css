@@ -206,7 +206,7 @@ body {
   background: none;
   border: none;
   padding: 0;
-  opacity: 30%;
+  opacity: 100%;
   cursor: pointer;
 }
 
@@ -290,7 +290,7 @@ a {
   grid-column: 2/2;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 50%;
+  margin-left: 60%;
   color: #ffc633;
   text-decoration: underline;
   font-size: 1.8vw;
@@ -312,7 +312,8 @@ h1 {
   margin-top: 4vw;
   color: #ffc633;
 }
-#ingredients {
+
+/* #ingredients {
   grid-column: 1/2;
   grid-row: 6/7;
   justify-self: left;
@@ -320,7 +321,44 @@ h1 {
   height: 20vw;
   margin-top: 2vw;
   margin-left: 9vw;
+} */
+
+.ingredients-section {
+  margin-top: 6rem;
 }
+
+#ingredients-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  margin-top: 1rem;
+  padding-left: 2.5rem;
+  width: 50%;
+}
+
+.ingredients-input {
+  border-radius: 1rem;
+  border: none;
+  background-color: #f9f9f9;
+  font-size: 1rem;
+}
+
+.add-ingredient {
+  background-color: #ffc633;
+  color: #3d0c02;
+  border: none;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  font-size: 1rem;
+  margin-left: 9vw;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.add-ingredient:hover {
+  color: #ffffff;
+}
+
 #steps {
   grid-column: 2/3;
   grid-row: 6/7;
@@ -453,8 +491,8 @@ form {
 .photo p {
   background-color: #3d0c02;
   color: #ffc633;
-  font-size: 5vw;        
-  width: 6vw;             
+  font-size: 5vw;
+  width: 6vw;
   height: 6vw;
   border-radius: 50%;
   display: flex;

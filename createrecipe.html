@@ -9,6 +9,7 @@
     <script src="recipes.js" defer></script>
     <script src="searchbar.js" defer></script>
     <script src="loading-recipe.js" defer></script>
+    <script src="ingredients-input.js" defer></script>
   </head>
   <body>
     <!-- header -->
@@ -142,7 +143,24 @@
           <div class="line light"></div>
         </a>
         <h1 class="josefin-sans-light">Create Your Own Recipe!</h1>
-        <label for="ingredients" class="josefin-sans-light ingredients"
+
+        <div class="ingredients-section">
+          <label for="ingredients" class="josefin-sans-light ingredients">
+            Ingredients:<br />
+            <div class="line2"></div>
+          </label>
+          <div id="ingredients-list">
+            <input
+              type="text"
+              name="ingredients[]"
+              class="ingredient-input"
+              placeholder="ex. 20g butter"
+            />
+          </div>
+          <button type="button" class="add-ingredient">+ Add ingredient</button>
+        </div>
+
+        <!-- <label for="ingredients" class="josefin-sans-light ingredients"
           >Ingredients:<br />
           <div class="line2"></div
         ></label>
@@ -152,7 +170,8 @@
           id="ingredients"
           name="ingredients"
           placeholder=" Write the ingredients needed..."
-        ></textarea>
+        ></textarea> -->
+
         <label for="steps" class="josefin-sans-light steps"
           >Description/Steps:<br />
           <div class="line2 line3"></div
