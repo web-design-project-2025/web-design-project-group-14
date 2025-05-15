@@ -538,29 +538,6 @@ input {
   .search-results {
     width: 20rem;
   }
-
-  #find-me {
-    margin-top: 2rem;
-    background-color: #45462a;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-  }
-
-  #icon {
-    font-size: 2rem;
-  }
-
-  #temperature {
-    font-size: 1rem;
-  }
-
-  #weatherfacts {
-    padding: 1rem;
-    margin-left: 1rem;
-  }
 }
 
 /* MAIN RESPONSIVE */
@@ -627,13 +604,13 @@ input {
   .image-section {
     flex-direction: column;
     align-items: center;
+    padding-left: 14%;
   }
 
   .image-box img {
     width: 90%;
     height: auto;
-    max-width: 250px;
-    padding-left: 33%;
+    max-width: 16rem;
   }
 
   .rating {

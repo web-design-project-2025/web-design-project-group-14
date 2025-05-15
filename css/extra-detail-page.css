@@ -713,29 +713,6 @@ input {
   .search-results {
     width: 20rem;
   }
-
-  #find-me {
-    margin-top: 2rem;
-    background-color: #45462a;
-    color: white;
-    font-size: 1rem;
-    padding: 0.5rem 1.2rem;
-    border: none;
-    border-radius: 8px;
-  }
-
-  #icon {
-    font-size: 2rem;
-  }
-
-  #temperature {
-    font-size: 1rem;
-  }
-
-  #weatherfacts {
-    padding: 1rem;
-    margin-left: 1rem;
-  }
 }
 
 /* MAIN RESPONSIVE */
@@ -751,13 +728,14 @@ input {
 
   .fruit-bar {
     gap: 2rem;
-    margin-top: 2rem;
-    transform: scale(0.5);
+    margin-top: 1.2rem;
+    transform: scale(0.6);
     transform-origin: top center;
+    margin-bottom: 1rem;
   }
 
   .percent-text {
-    font-size: 2.2rem;
+    font-size: 3rem;
   }
 
   .bar-line {
@@ -797,7 +775,7 @@ input {
 
   .editorial-left p,
   .editorial-right p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0 1.5rem;
     line-height: 1.6;
     letter-spacing: 0.02rem;
@@ -810,11 +788,11 @@ input {
   }
 
   .editorial-right figcaption {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .learn-more h2 {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     margin-top: -6rem;
   }
 
