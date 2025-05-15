@@ -528,7 +528,7 @@ label {
 }
 
 /* HEADER RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .header {
     padding: 1rem;
   }
@@ -553,7 +553,7 @@ label {
 }
 
 /* SEARCH RESPONSIVE */
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   #search-container {
     position: sticky;
     top: 3.5rem;
@@ -609,7 +609,7 @@ label {
     margin-left: 1rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .menu {
     width: 70%;
   }
@@ -618,7 +618,9 @@ label {
   }
   #showfood h1 {
     grid-column: 1/2;
-    font-size: 20vw;
+    margin-top: 8vw;
+    margin-left: 10%;
+    font-size: 12vw;
   }
   #showfood figure {
     grid-column: 1/2;
@@ -677,15 +679,19 @@ label {
     margin-left: 3%;
     margin-bottom: 10vw;
   }
-  h3 {
+  #circle2 h3 {
     color: #3d0c02;
     font-size: 7vw;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
   }
-  p {
+  #circle2 p {
     color: #3d0c02;
-    width: 100%;
+    width: 95%;
     font-size: 5vw;
-    margin-left: 2vw;
+    margin-left: auto;
+    margin-right: auto;
   }
   #button {
     grid-column: 1/2;
