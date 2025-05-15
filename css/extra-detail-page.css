@@ -240,6 +240,10 @@ input {
   margin: 0 auto;
 }
 
+.search-bar::placeholder {
+  color: rgb(0, 0, 0);
+  font-size: 1.1vw;
+}
 .search-bar {
   width: 100%;
   padding: 0.6rem 1rem;
@@ -247,8 +251,8 @@ input {
   font-family: var(--font-primary, "Josefin Sans", sans-serif);
   font-size: 1rem;
   outline: none;
-  background-color: #e7e6e3;
-  color: var(--color-dark, #333333);
+  background-color: #b6b5b3;
+  color: rgb(0, 0, 0);
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
