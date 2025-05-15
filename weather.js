@@ -1,3 +1,5 @@
+/*https://chatgpt.com/share/68264757-c718-8002-bf91-babc828da394 & https://open-meteo.com/en/docs?current=temperature_2m&latitude=57.7814&longitude=14.1562 & https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API*/
+
 const weatherCodeToIcon = {
   0: "☀️",
   1: "🌤️",

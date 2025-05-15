@@ -85,7 +85,10 @@ body {
   max-width: 25rem;
   margin: 0 auto;
 }
-
+.search-bar::placeholder {
+  color: white;
+  font-size: 1.1vw;
+}
 .search-bar {
   width: 100%;
   padding: 0.6rem 1rem;
@@ -93,8 +96,8 @@ body {
   font-family: var(--font-primary, "Josefin Sans", sans-serif);
   font-size: 1rem;
   outline: none;
-  background-color: #e7e6e3;
-  color: var(--color-dark, #333333);
+  background-color: #b6b5b3;
+  color: white;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
@@ -178,6 +181,7 @@ body {
 
 .menu.active {
   right: 0;
+  max-height: max-content;
 }
 
 .menu h2 {
@@ -254,6 +258,7 @@ a {
 .join-us {
   margin-top: 3rem;
   font-size: 1.2rem;
+  margin-bottom: 10vw;
 }
 
 input {
@@ -331,7 +336,7 @@ portion-option:hover {
 .circle1 {
   background-color: #d9a115;
   border-radius: 50%;
-  width: 67%;
+  width: 60%;
   grid-column: 3/5;
   grid-row: 1/3;
   margin-left: 30%;
@@ -346,7 +351,7 @@ portion-option:hover {
   margin-bottom: 1vw;
 }
 form {
-  width: 70%;
+  width: 73%;
   margin-left: 20%;
   margin-bottom: 5vw;
 }
@@ -357,20 +362,23 @@ label {
 #circle2 {
   background-color: #3d0c02;
   border-radius: 50%;
-  width: 55%;
+  width: 48%;
   grid-column: 3/6;
   grid-row: 3/4;
-  margin-left: 20%;
+  margin-left: 15%;
   margin-top: -12vw;
   z-index: 86;
 }
-h3 {
+#circle2 h3 {
   color: #ffc633;
   font-size: 1.6vw;
   text-align: center;
   margin-top: 5vw;
+  width: 78%;
+  margin-left: auto;
+  margin-right: auto;
 }
-p {
+#circle2 p {
   color: #e7e6e3;
   width: 70%;
   font-size: 1.5vw;
@@ -415,6 +423,7 @@ p {
 }
 #steps p {
   width: 60%;
+  margin-left: 15%;
   grid-column: 1/3;
   text-align: left;
   color: #3d0c02;
