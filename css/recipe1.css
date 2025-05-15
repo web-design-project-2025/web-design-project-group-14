@@ -362,10 +362,10 @@ label {
 #circle2 {
   background-color: #3d0c02;
   border-radius: 50%;
-  width: 50%;
+  width: 48%;
   grid-column: 3/6;
   grid-row: 3/4;
-  margin-left: 20%;
+  margin-left: 13%;
   margin-top: -12vw;
   z-index: 86;
 }
