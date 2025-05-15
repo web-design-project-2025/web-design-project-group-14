@@ -551,9 +551,6 @@ input {
 
 /* MAIN RESPONSIVE */
 @media (max-width: 420px) {
-  .menu {
-    width: 70%;
-  }
   #category-name {
     font-size: 1.5rem;
     padding-left: 0rem;

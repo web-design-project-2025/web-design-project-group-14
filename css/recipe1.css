@@ -621,9 +621,6 @@ label {
 
 /* MAIN */
 @media (max-width: 420px) {
-  .menu {
-    width: 70%;
-  }
   #showfood {
     grid-template-columns: 1fr;
   }

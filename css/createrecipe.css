@@ -681,9 +681,6 @@ form {
 
 /* MAIN RESPONSIVE */
 @media (max-width: 420px) {
-  .menu {
-    width: 70%;
-  }
   .form {
     display: flex;
     flex-direction: column;
