@@ -1,3 +1,5 @@
+/* Saving recipes inspo- https://chatgpt.com/share/68271e8f-287c-800a-a525-312d7e33ab60 */
+
 document.addEventListener("DOMContentLoaded", () => {
   let savedRecipes = JSON.parse(localStorage.getItem("savedRecipes")) || [];
 
@@ -6,17 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const savedList = document.getElementById("saved-list");
   const savedCount = document.getElementById("saved-count");
 
-  const brekfastrToggle = document.getElementById("brekfast-toggle");
-  const brekfastList = document.getElementById("brekfast-list");
-
   const lunchToggle = document.getElementById("lunch-toggle");
   const lunchList = document.getElementById("lunch-list");
-
-  const dinnerToggle = document.getElementById("dinner-toggle");
-  const dinnerList = document.getElementById("dinner-list");
-
-  const snacksToggle = document.getElementById("snacks-toggle");
-  const snacksList = document.getElementById("snacks-list");
 
   function updateSavedList() {
     if (savedList) {
@@ -73,6 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
+
+  /* Inspiration for categories in saving option - https://chatgpt.com/share/68271f49-3bb0-800a-883c-8b2932bde8e8 */
 
   function renderLunchRecipes() {
     if (!lunchList) return;
