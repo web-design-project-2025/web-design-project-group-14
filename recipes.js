@@ -2,6 +2,7 @@
 
 let recipes = [];
 
+/*https://chatgpt.com/share/685ee5b4-fc28-8002-bf63-a5ca956cfe53*/
 fetch("recipes.json")
   .then((response) => response.json())
   .then((data) => {

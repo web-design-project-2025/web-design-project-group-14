@@ -99,6 +99,8 @@ function waitForRecipes() {
     localStorage.setItem(`checkboxStates_${recipeId}`, JSON.stringify(states));
   }
 
+  /*https://chatgpt.com/share/685ee644-97cc-8002-b556-64bfcefd5d2e*/
+
   function loadCheckboxStates() {
     const states = JSON.parse(
       localStorage.getItem(`checkboxStates_${recipeId}`)
