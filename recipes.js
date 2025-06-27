@@ -2,17 +2,19 @@
 
 let recipes = [];
 
-/*https://chatgpt.com/share/685ee5b4-fc28-8002-bf63-a5ca956cfe53*/
-fetch("recipes.json")
-  .then((response) => response.json())
-  .then((data) => {
-    window.recipes = data;
-    recipes = data;
+Promise.all([
+  fetch("recipesA.json").then((res) => res.json()),
+  fetch("recipesB.json").then((res) => res.json()),
+])
+  .then(([dataA, dataB]) => {
+    // Combine both datasets
+    recipes = [...dataA, ...dataB];
+    window.recipes = recipes;
 
     const container = document.getElementById("recipe-container");
     container.innerHTML = "";
 
-    data.forEach((recipe) => {
+    recipes.forEach((recipe) => {
       const recipeHTML = `
         <div class="recipe">
           <h2>${recipe.title.join(" ")}</h2>
@@ -32,4 +34,4 @@ fetch("recipes.json")
       container.innerHTML += recipeHTML;
     });
   })
-  .catch((error) => console.error("Error loading JSON:", error));
+  .catch((error) => console.error("Error loading JSON files:", error));
