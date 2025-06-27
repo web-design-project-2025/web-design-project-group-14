@@ -6,7 +6,7 @@
     "ingredients": [
       { "name": "Ground beef", "quantity": 150, "unit": "g" },
       { "name": "Crushed tomatoes", "quantity": 0.5, "unit": "cup" },
-      { "name": " Kidney beans", "quantity": 0.5, "unit": "cup" },
+      { "name": "Kidney beans", "quantity": 0.5, "unit": "cup" },
       { "name": "Onion", "quantity": 0.25, "unit": "diced" },
       { "name": "Garlic", "quantity": 1, "unit": "clove" },
       { "name": "Chilli Powder", "quantity": 1, "unit": "tsp" }
