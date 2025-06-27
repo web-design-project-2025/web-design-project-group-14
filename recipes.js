@@ -2,10 +2,13 @@
 
 let recipes = [];
 
+/* https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all */
 Promise.all([
   fetch("recipesA.json").then((res) => res.json()),
   fetch("recipesB.json").then((res) => res.json()),
 ])
+
+  /* https://chatgpt.com/share/685eee19-d3c4-800a-926b-82714b5317f3 */
   .then(([dataA, dataB]) => {
     // Combine both datasets
     recipes = [...dataA, ...dataB];
